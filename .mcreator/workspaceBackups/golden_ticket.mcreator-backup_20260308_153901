@@ -1,0 +1,285 @@
+{
+  "mod_elements": [
+    {
+      "name": "Chocolate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chocolate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/pdy/goldenticket/procedures/ChocolateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "PacketChocolateBar",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "packet_chocolate_bar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/golden_ticket/models/item/packet_chocolate_bar.json",
+          "src/main/java/net/pdy/goldenticket/item/PacketChocolateBarItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Pdy_get_chocolate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pdy_get_chocolate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/pdy/goldenticket/procedures/Pdy_get_chocolateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/entity"
+    },
+    {
+      "name": "Pdy",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pdy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/pdy/goldenticket/entity/PdyEntity.java",
+          "src/main/resources/assets/golden_ticket/models/item/pdy_spawn_egg.json",
+          "src/main/java/net/pdy/goldenticket/client/renderer/PdyRenderer.java",
+          "src/main/resources/data/golden_ticket/forge/biome_modifier/pdy_biome_modifier.json"
+        ]
+      },
+      "path": "~/entity"
+    },
+    {
+      "name": "Everlasting_Gobstopper",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "everlasting_gobstopper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/pdy/goldenticket/procedures/Everlasting_GobstopperProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "EverlastingGobstopper",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "everlasting_gobstopper",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/golden_ticket/models/item/everlasting_gobstopper.json",
+          "src/main/java/net/pdy/goldenticket/item/EverlastingGobstopperItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "PacketChocolatebarinclude",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "packet_chocolatebarinclude",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/golden_ticket/models/item/packet_chocolatebarinclude.json",
+          "src/main/java/net/pdy/goldenticket/item/PacketChocolatebarincludeItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Goldenticket",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goldenticket",
+      "metadata": {
+        "files": [
+          "src/main/java/net/pdy/goldenticket/item/GoldenticketItem.java",
+          "src/main/resources/assets/golden_ticket/models/item/goldenticket.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Golden_ticket",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_ticket",
+      "metadata": {
+        "files": [
+          "src/main/java/net/pdy/goldenticket/procedures/Golden_ticketProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Goldenticketrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goldenticketrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/golden_ticket/recipes/goldenticketrecipe.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "PacketChocolaterecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "packet_chocolaterecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/golden_ticket/recipes/packet_chocolaterecipe.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "PacketChocolateincluderecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "packet_chocolateincluderecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/golden_ticket/recipes/packet_chocolateincluderecipe.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Everlastingrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "everlastingrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/golden_ticket/recipes/everlastingrecipe.json"
+        ]
+      },
+      "path": "~/item"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "pdy_get_chocolate",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {
+    "FOOD": [
+      "PacketChocolatebarinclude",
+      "PacketChocolateBar",
+      "EverlastingGobstopper"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "item.golden_ticket.packet_chocolatebarinclude": "Packet Chocolate Bar",
+      "item.golden_ticket.pdy_spawn_egg": "Pdy Spawn Egg",
+      "item.golden_ticket.everlasting_gobstopper": "Everlasting Gobstopper",
+      "item.golden_ticket.goldenticket": "Goldenticket",
+      "item.golden_ticket.packet_chocolate_bar": "Packet Chocolate Bar",
+      "item.golden_ticket.everlasting_gobstopper.description_0": "似乎永远都吃不完……",
+      "entity.golden_ticket.pdy": "Pdy"
+    },
+    "zh_cn": {
+      "item.golden_ticket.packet_chocolatebarinclude": "包装巧克力板",
+      "item.golden_ticket.pdy_spawn_egg": "潘大杨刷怪蛋",
+      "item.golden_ticket.everlasting_gobstopper": "美味持久硬糖",
+      "item.golden_ticket.goldenticket": "金券",
+      "item.golden_ticket.packet_chocolate_bar": "包装巧克力板",
+      "item.golden_ticket.everlasting_gobstopper.description_0": "似乎能一直吃……",
+      "entity.golden_ticket.pdy": "潘大杨"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "item",
+        "children": []
+      },
+      {
+        "name": "entity",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "golden_ticket",
+    "modName": "威力潘大杨的金券",
+    "version": "1.1.4-514",
+    "description": "威力网卡的金圆券，1.20.1Forge重制版by ccz3141",
+    "author": "ccz3141",
+    "websiteURL": "https://mcreator.net",
+    "license": "All Rights Reserved",
+    "serverSideOnly": true,
+    "modPicture": "packeted_chocolate_bar",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.pdy.goldenticket"
+  },
+  "mcreatorVersion": 202400452410
+}
