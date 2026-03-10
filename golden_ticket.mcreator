@@ -3,7 +3,7 @@
     {
       "name": "Chocolate",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "chocolate",
       "metadata": {
@@ -30,7 +30,7 @@
     {
       "name": "PacketChocolateBar",
       "type": "item",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "packet_chocolate_bar",
       "metadata": {
@@ -63,7 +63,7 @@
     {
       "name": "Pdy",
       "type": "livingentity",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "pdy",
       "metadata": {
@@ -93,7 +93,7 @@
     {
       "name": "PacketChocolatebarinclude",
       "type": "item",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "packet_chocolatebarinclude",
       "metadata": {
@@ -121,7 +121,7 @@
     {
       "name": "Golden_ticket",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "golden_ticket",
       "metadata": {
@@ -252,7 +252,7 @@
       "item.golden_ticket.packet_chocolate_bar": "Packet Chocolate Bar",
       "item.golden_ticket.everlasting_gobstopper.description_0": "Perhaps it is able to eat continously",
       "subtitles.pdy_chocolate_renyangyitouniu": "Pan_Da_Yang:…(Chinese)…",
-      "entity.golden_ticket.pdy": "Pan_Da_Yang",
+      "entity.golden_ticket.pdy": "Pdy",
       "subtitles.pdy_chocolate1": "Pan_Da_Yang:…(Chinese)…"
     },
     "zh_cn": {

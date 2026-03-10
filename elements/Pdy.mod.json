@@ -105,16 +105,16 @@
       "value": "CUSTOM:PacketChocolatebarinclude"
     },
     "livingSound": {
-      "value": "CUSTOM:pdy_chocolate1"
+      "value": "CUSTOM:pdy_chocolate_quanzidongchaojiqiaokeligongchang"
     },
     "hurtSound": {
-      "value": "CUSTOM:pdy_chocolate_renyangyitouniu"
-    },
-    "deathSound": {
       "value": "CUSTOM:pdy_chocolate_zhongsuozhouzhi"
     },
-    "stepSound": {
+    "deathSound": {
       "value": "CUSTOM:pdy_chocolate_quanzidongchaojiqiaokeligongchang"
+    },
+    "stepSound": {
+      "value": "CUSTOM:pdy_chocolate_renyangyitouniu"
     },
     "raidCelebrationSound": {
       "value": ""

@@ -1,13 +1,13 @@
 {
   "item.golden_ticket.packet_chocolatebarinclude": "Packet Chocolate Bar",
-  "subtitles.pdy_chocolate_zhongsuozhouzhi": "潘大杨：众所周知",
+  "subtitles.pdy_chocolate_zhongsuozhouzhi": "Pan_Da_Yang:…(Chinese)…",
   "item.golden_ticket.pdy_spawn_egg": "Pdy Spawn Egg",
   "item.golden_ticket.everlasting_gobstopper": "Everlasting Gobstopper",
-  "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang": "潘大杨：全自动超级巧克力工厂",
+  "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang": "Pan_Da_Yang:…(Chinese)…",
   "item.golden_ticket.goldenticket": "Goldenticket",
   "item.golden_ticket.packet_chocolate_bar": "Packet Chocolate Bar",
-  "item.golden_ticket.everlasting_gobstopper.description_0": "似乎永远都吃不完……",
-  "subtitles.pdy_chocolate_renyangyitouniu": "潘大杨：认养一头牛",
+  "item.golden_ticket.everlasting_gobstopper.description_0": "Perhaps it is able to eat continously",
+  "subtitles.pdy_chocolate_renyangyitouniu": "Pan_Da_Yang:…(Chinese)…",
   "entity.golden_ticket.pdy": "Pdy",
-  "subtitles.pdy_chocolate1": "潘大杨：巧克力工厂"
+  "subtitles.pdy_chocolate1": "Pan_Da_Yang:…(Chinese)…"
 }

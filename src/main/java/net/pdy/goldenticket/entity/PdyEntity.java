@@ -88,22 +88,22 @@ public class PdyEntity extends Animal {
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pdy_chocolate1"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pdy_chocolate_quanzidongchaojiqiaokeligongchang"));
 	}
 
 	@Override
 	public void playStepSound(BlockPos pos, BlockState blockIn) {
-		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pdy_chocolate_quanzidongchaojiqiaokeligongchang")), 0.15f, 1);
+		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pdy_chocolate_renyangyitouniu")), 0.15f, 1);
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pdy_chocolate_renyangyitouniu"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pdy_chocolate_zhongsuozhouzhi"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pdy_chocolate_zhongsuozhouzhi"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pdy_chocolate_quanzidongchaojiqiaokeligongchang"));
 	}
 
 	@Override
