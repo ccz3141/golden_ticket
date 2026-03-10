@@ -18,13 +18,13 @@
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 0,
+    "damageCount": 128,
     "recipeRemainder": {
       "value": ""
     },
     "destroyAnyBlock": true,
     "immuneToFire": true,
-    "stayInGridWhenCrafting": false,
+    "stayInGridWhenCrafting": true,
     "damageOnCrafting": true,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
@@ -38,9 +38,6 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onFinishUsingItem": {
-      "name": "Everlasting_Gobstopper"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
@@ -48,14 +45,14 @@
       "value": "Arrow"
     },
     "projectileDisableAmmoCheck": false,
-    "isFood": false,
-    "nutritionalValue": 4,
-    "saturation": 0.3,
+    "isFood": true,
+    "nutritionalValue": 1,
+    "saturation": 0.01,
     "eatResultItem": {
-      "value": ""
+      "value": "CUSTOM:EverlastingGobstopper"
     },
     "isMeat": false,
-    "isAlwaysEdible": false,
+    "isAlwaysEdible": true,
     "animation": "eat",
     "isMusicDisc": false,
     "musicDiscMusic": {

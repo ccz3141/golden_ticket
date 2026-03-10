@@ -1,9 +1,13 @@
 {
   "item.golden_ticket.packet_chocolatebarinclude": "包装巧克力板",
+  "subtitles.pdy_chocolate_zhongsuozhouzhi": "",
   "item.golden_ticket.pdy_spawn_egg": "潘大杨刷怪蛋",
   "item.golden_ticket.everlasting_gobstopper": "美味持久硬糖",
+  "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang": "",
   "item.golden_ticket.goldenticket": "金券",
   "item.golden_ticket.packet_chocolate_bar": "包装巧克力板",
   "item.golden_ticket.everlasting_gobstopper.description_0": "似乎能一直吃……",
-  "entity.golden_ticket.pdy": "潘大杨"
+  "subtitles.pdy_chocolate_renyangyitouniu": "",
+  "entity.golden_ticket.pdy": "潘大杨",
+  "subtitles.pdy_chocolate1": ""
 }

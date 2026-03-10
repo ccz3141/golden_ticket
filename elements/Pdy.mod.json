@@ -3,7 +3,7 @@
   "_type": "livingentity",
   "definition": {
     "mobName": "Pdy",
-    "mobLabel": "",
+    "mobLabel": "Pan_Da_Yang",
     "mobModelName": "Biped",
     "mobModelTexture": "pdy.png",
     "transparentModelCondition": {
@@ -69,10 +69,10 @@
     "knockbackResistance": 0.0,
     "movementSpeed": 0.4,
     "stepHeight": 0.8,
-    "armorBaseValue": 0.0,
+    "armorBaseValue": 1.0,
     "trackingRange": 64,
     "followRange": 16,
-    "health": 256,
+    "health": 64,
     "xpAmount": 114,
     "waterMob": false,
     "breatheUnderwater": {
@@ -105,16 +105,16 @@
       "value": "CUSTOM:PacketChocolatebarinclude"
     },
     "livingSound": {
-      "value": ""
+      "value": "CUSTOM:pdy_chocolate1"
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": "CUSTOM:pdy_chocolate_renyangyitouniu"
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": "CUSTOM:pdy_chocolate_zhongsuozhouzhi"
     },
     "stepSound": {
-      "value": ""
+      "value": "CUSTOM:pdy_chocolate_quanzidongchaojiqiaokeligongchang"
     },
     "raidCelebrationSound": {
       "value": ""
@@ -142,10 +142,10 @@
     "rangedAttackRadius": 10.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 20,
+    "spawningProbability": 10,
     "mobSpawningType": "ambient",
     "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 3,
     "restrictionBiomes": [],
     "spawnInDungeons": false,
     "raidSpawnsCount": [

@@ -17,7 +17,7 @@ import net.pdy.goldenticket.procedures.ChocolateProcedure;
 
 public class PacketChocolateBarItem extends Item {
 	public PacketChocolateBarItem() {
-		super(new Item.Properties().durability(16).fireResistant().rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(40).saturationMod(1f).alwaysEat().build()));
+		super(new Item.Properties().durability(24).fireResistant().rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(40).saturationMod(1f).alwaysEat().build()));
 	}
 
 	@Override

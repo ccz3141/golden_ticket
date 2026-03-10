@@ -1,0 +1,38 @@
+{
+  "pdy_chocolate1": {
+    "subtitle": "subtitles.pdy_chocolate1",
+    "sounds": [
+      {
+        "name": "golden_ticket:chi_shi_ke_ji__quan_xin_sheng_ji_quan_zi_dong_chao_ji_qiao_ke_li_gong_han__",
+        "stream": false
+      }
+    ]
+  },
+  "pdy_chocolate_zhongsuozhouzhi": {
+    "subtitle": "subtitles.pdy_chocolate_zhongsuozhouzhi",
+    "sounds": [
+      {
+        "name": "golden_ticket:chi_shi_ke_ji__quan_xin_sheng_ji_quan_zi_dong_chao_ji_qiao_ke_li_gong_han___00_00_00-00_00_02",
+        "stream": false
+      }
+    ]
+  },
+  "pdy_chocolate_quanzidongchaojiqiaokeligongchang": {
+    "subtitle": "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang",
+    "sounds": [
+      {
+        "name": "golden_ticket:chi_shi_ke_ji__quan_xin_sheng_ji_quan_zi_dong_chao_ji_qiao_ke_li_gong_han___00_01_01-00_01_03",
+        "stream": false
+      }
+    ]
+  },
+  "pdy_chocolate_renyangyitouniu": {
+    "subtitle": "subtitles.pdy_chocolate_renyangyitouniu",
+    "sounds": [
+      {
+        "name": "golden_ticket:chi_shi_ke_ji__quan_xin_sheng_ji_quan_zi_dong_chao_ji_qiao_ke_li_gong_han___00_01_20-00_01_22",
+        "stream": false
+      }
+    ]
+  }
+}

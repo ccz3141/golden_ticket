@@ -16,6 +16,7 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
 import net.pdy.goldenticket.init.GoldenTicketModTabs;
+import net.pdy.goldenticket.init.GoldenTicketModSounds;
 import net.pdy.goldenticket.init.GoldenTicketModItems;
 import net.pdy.goldenticket.init.GoldenTicketModEntities;
 
@@ -38,6 +39,7 @@ public class GoldenTicketMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		GoldenTicketModSounds.REGISTRY.register(bus);
 
 		GoldenTicketModItems.REGISTRY.register(bus);
 		GoldenTicketModEntities.REGISTRY.register(bus);

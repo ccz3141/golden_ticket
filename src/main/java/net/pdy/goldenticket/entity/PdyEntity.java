@@ -1,6 +1,8 @@
 
 package net.pdy.goldenticket.entity;
 
+import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.resources.ResourceLocation;
@@ -22,6 +24,7 @@ import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.network.PlayMessages;
@@ -40,6 +43,8 @@ public class PdyEntity extends Animal {
 		setMaxUpStep(0.8f);
 		xpReward = 114;
 		setNoAi(false);
+		setCustomName(Component.literal("Pan_Da_Yang"));
+		setCustomNameVisible(true);
 	}
 
 	@Override
@@ -82,13 +87,23 @@ public class PdyEntity extends Animal {
 	}
 
 	@Override
+	public SoundEvent getAmbientSound() {
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pdy_chocolate1"));
+	}
+
+	@Override
+	public void playStepSound(BlockPos pos, BlockState blockIn) {
+		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pdy_chocolate_quanzidongchaojiqiaokeligongchang")), 0.15f, 1);
+	}
+
+	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pdy_chocolate_renyangyitouniu"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pdy_chocolate_zhongsuozhouzhi"));
 	}
 
 	@Override
@@ -141,7 +156,7 @@ public class PdyEntity extends Animal {
 		Entity entity = this;
 		Level world = this.level();
 
-		Pdy_get_chocolateProcedure.execute(world, entity);
+		Pdy_get_chocolateProcedure.execute(entity);
 		return retval;
 	}
 
@@ -164,8 +179,8 @@ public class PdyEntity extends Animal {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.4);
-		builder = builder.add(Attributes.MAX_HEALTH, 256);
-		builder = builder.add(Attributes.ARMOR, 0);
+		builder = builder.add(Attributes.MAX_HEALTH, 64);
+		builder = builder.add(Attributes.ARMOR, 1);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 5);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		return builder;

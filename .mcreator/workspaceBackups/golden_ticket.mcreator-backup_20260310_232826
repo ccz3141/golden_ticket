@@ -3,8 +3,8 @@
     {
       "name": "Chocolate",
       "type": "procedure",
-      "compiles": true,
-      "locked_code": true,
+      "compiles": false,
+      "locked_code": false,
       "registry_name": "chocolate",
       "metadata": {
         "files": [
@@ -30,8 +30,8 @@
     {
       "name": "PacketChocolateBar",
       "type": "item",
-      "compiles": true,
-      "locked_code": true,
+      "compiles": false,
+      "locked_code": false,
       "registry_name": "packet_chocolate_bar",
       "metadata": {
         "files": [
@@ -44,7 +44,7 @@
     {
       "name": "Pdy_get_chocolate",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "pdy_get_chocolate",
       "metadata": {
@@ -55,10 +55,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -68,7 +64,7 @@
       "name": "Pdy",
       "type": "livingentity",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "pdy",
       "metadata": {
         "files": [
@@ -81,28 +77,9 @@
       "path": "~/entity"
     },
     {
-      "name": "Everlasting_Gobstopper",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "everlasting_gobstopper",
-      "metadata": {
-        "files": [
-          "src/main/java/net/pdy/goldenticket/procedures/Everlasting_GobstopperProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/item"
-    },
-    {
       "name": "EverlastingGobstopper",
       "type": "item",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "everlasting_gobstopper",
       "metadata": {
@@ -116,8 +93,8 @@
     {
       "name": "PacketChocolatebarinclude",
       "type": "item",
-      "compiles": true,
-      "locked_code": true,
+      "compiles": false,
+      "locked_code": false,
       "registry_name": "packet_chocolatebarinclude",
       "metadata": {
         "files": [
@@ -144,8 +121,8 @@
     {
       "name": "Golden_ticket",
       "type": "procedure",
-      "compiles": true,
-      "locked_code": true,
+      "compiles": false,
+      "locked_code": false,
       "registry_name": "golden_ticket",
       "metadata": {
         "files": [
@@ -155,6 +132,14 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -200,19 +185,6 @@
       "path": "~/item"
     },
     {
-      "name": "Everlastingrecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "everlastingrecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/golden_ticket/recipes/everlastingrecipe.json"
-        ]
-      },
-      "path": "~/item"
-    },
-    {
       "name": "Pdyspawneggrecipe",
       "type": "recipe",
       "compiles": true,
@@ -226,15 +198,41 @@
       "path": "~/entity"
     }
   ],
-  "variable_elements": [
+  "variable_elements": [],
+  "sound_elements": [
     {
-      "name": "pdy_get_chocolate",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
+      "name": "pdy_chocolate1",
+      "files": [
+        "chi_shi_ke_ji__quan_xin_sheng_ji_quan_zi_dong_chao_ji_qiao_ke_li_gong_han__"
+      ],
+      "category": "neutral",
+      "subtitle": "潘大杨：巧克力工厂"
+    },
+    {
+      "name": "pdy_chocolate_zhongsuozhouzhi",
+      "files": [
+        "chi_shi_ke_ji__quan_xin_sheng_ji_quan_zi_dong_chao_ji_qiao_ke_li_gong_han___00_00_00-00_00_02"
+      ],
+      "category": "neutral",
+      "subtitle": "潘大杨：众所周知"
+    },
+    {
+      "name": "pdy_chocolate_quanzidongchaojiqiaokeligongchang",
+      "files": [
+        "chi_shi_ke_ji__quan_xin_sheng_ji_quan_zi_dong_chao_ji_qiao_ke_li_gong_han___00_01_01-00_01_03"
+      ],
+      "category": "neutral",
+      "subtitle": "潘大杨：全自动超级巧克力工厂"
+    },
+    {
+      "name": "pdy_chocolate_renyangyitouniu",
+      "files": [
+        "chi_shi_ke_ji__quan_xin_sheng_ji_quan_zi_dong_chao_ji_qiao_ke_li_gong_han___00_01_20-00_01_22"
+      ],
+      "category": "neutral",
+      "subtitle": "潘大杨：认养一头牛"
     }
   ],
-  "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {
     "FOOD": [
@@ -246,21 +244,29 @@
   "language_map": {
     "en_us": {
       "item.golden_ticket.packet_chocolatebarinclude": "Packet Chocolate Bar",
+      "subtitles.pdy_chocolate_zhongsuozhouzhi": "潘大杨：众所周知",
       "item.golden_ticket.pdy_spawn_egg": "Pdy Spawn Egg",
       "item.golden_ticket.everlasting_gobstopper": "Everlasting Gobstopper",
+      "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang": "潘大杨：全自动超级巧克力工厂",
       "item.golden_ticket.goldenticket": "Goldenticket",
       "item.golden_ticket.packet_chocolate_bar": "Packet Chocolate Bar",
       "item.golden_ticket.everlasting_gobstopper.description_0": "似乎永远都吃不完……",
-      "entity.golden_ticket.pdy": "Pdy"
+      "subtitles.pdy_chocolate_renyangyitouniu": "潘大杨：认养一头牛",
+      "entity.golden_ticket.pdy": "Pdy",
+      "subtitles.pdy_chocolate1": "潘大杨：巧克力工厂"
     },
     "zh_cn": {
       "item.golden_ticket.packet_chocolatebarinclude": "包装巧克力板",
+      "subtitles.pdy_chocolate_zhongsuozhouzhi": "",
       "item.golden_ticket.pdy_spawn_egg": "潘大杨刷怪蛋",
       "item.golden_ticket.everlasting_gobstopper": "美味持久硬糖",
+      "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang": "",
       "item.golden_ticket.goldenticket": "金券",
       "item.golden_ticket.packet_chocolate_bar": "包装巧克力板",
       "item.golden_ticket.everlasting_gobstopper.description_0": "似乎能一直吃……",
-      "entity.golden_ticket.pdy": "潘大杨"
+      "subtitles.pdy_chocolate_renyangyitouniu": "",
+      "entity.golden_ticket.pdy": "潘大杨",
+      "subtitles.pdy_chocolate1": ""
     }
   },
   "foldersRoot": {

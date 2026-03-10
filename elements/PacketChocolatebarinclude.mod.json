@@ -14,7 +14,7 @@
         "value": "FOOD"
       }
     ],
-    "stackSize": 64,
+    "stackSize": 16,
     "enchantability": 1,
     "useDuration": 32,
     "toolType": 1.0,

@@ -14,6 +14,7 @@ public class ChocolateProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
+		ItemStack item_data = ItemStack.EMPTY;
 		{
 			ItemStack _ist = itemstack;
 			if (_ist.hurt(1, RandomSource.create(), null)) {
@@ -28,6 +29,8 @@ public class ChocolateProcedure {
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 60, 1));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 600, 255));
+			_entity.addEffect(new MobEffectInstance(MobEffects.SATURATION, 100, 255));
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 3600, 1));
 	}
 }
