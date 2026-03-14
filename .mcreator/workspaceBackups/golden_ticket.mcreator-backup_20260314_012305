@@ -3,8 +3,8 @@
     {
       "name": "Chocolate",
       "type": "procedure",
-      "compiles": false,
-      "locked_code": false,
+      "compiles": true,
+      "locked_code": true,
       "registry_name": "chocolate",
       "metadata": {
         "files": [
@@ -30,8 +30,8 @@
     {
       "name": "PacketChocolateBar",
       "type": "item",
-      "compiles": false,
-      "locked_code": false,
+      "compiles": true,
+      "locked_code": true,
       "registry_name": "packet_chocolate_bar",
       "metadata": {
         "files": [
@@ -45,7 +45,7 @@
       "name": "Pdy_get_chocolate",
       "type": "procedure",
       "compiles": false,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "pdy_get_chocolate",
       "metadata": {
         "files": [
@@ -63,8 +63,8 @@
     {
       "name": "Pdy",
       "type": "livingentity",
-      "compiles": true,
-      "locked_code": true,
+      "compiles": false,
+      "locked_code": false,
       "registry_name": "pdy",
       "metadata": {
         "files": [
@@ -77,28 +77,9 @@
       "path": "~/entity"
     },
     {
-      "name": "Everlasting_Gobstopper",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "everlasting_gobstopper",
-      "metadata": {
-        "files": [
-          "src/main/java/net/pdy/goldenticket/procedures/Everlasting_GobstopperProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/item"
-    },
-    {
       "name": "EverlastingGobstopper",
       "type": "item",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "everlasting_gobstopper",
       "metadata": {
@@ -112,8 +93,8 @@
     {
       "name": "PacketChocolatebarinclude",
       "type": "item",
-      "compiles": false,
-      "locked_code": false,
+      "compiles": true,
+      "locked_code": true,
       "registry_name": "packet_chocolatebarinclude",
       "metadata": {
         "files": [
@@ -140,8 +121,8 @@
     {
       "name": "Golden_ticket",
       "type": "procedure",
-      "compiles": false,
-      "locked_code": false,
+      "compiles": true,
+      "locked_code": true,
       "registry_name": "golden_ticket",
       "metadata": {
         "files": [
@@ -263,29 +244,29 @@
   "language_map": {
     "en_us": {
       "item.golden_ticket.packet_chocolatebarinclude": "Packet Chocolate Bar",
-      "subtitles.pdy_chocolate_zhongsuozhouzhi": "潘大杨：众所周知",
+      "subtitles.pdy_chocolate_zhongsuozhouzhi": "Pan_Da_Yang:…(Chinese)…",
       "item.golden_ticket.pdy_spawn_egg": "Pdy Spawn Egg",
       "item.golden_ticket.everlasting_gobstopper": "Everlasting Gobstopper",
-      "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang": "潘大杨：全自动超级巧克力工厂",
+      "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang": "Pan_Da_Yang:…(Chinese)…",
       "item.golden_ticket.goldenticket": "Goldenticket",
       "item.golden_ticket.packet_chocolate_bar": "Packet Chocolate Bar",
-      "item.golden_ticket.everlasting_gobstopper.description_0": "似乎永远都吃不完……",
-      "subtitles.pdy_chocolate_renyangyitouniu": "潘大杨：认养一头牛",
+      "item.golden_ticket.everlasting_gobstopper.description_0": "Perhaps it is able to eat continously",
+      "subtitles.pdy_chocolate_renyangyitouniu": "Pan_Da_Yang:…(Chinese)…",
       "entity.golden_ticket.pdy": "Pdy",
-      "subtitles.pdy_chocolate1": "潘大杨：巧克力工厂"
+      "subtitles.pdy_chocolate1": "Pan_Da_Yang:…(Chinese)…"
     },
     "zh_cn": {
       "item.golden_ticket.packet_chocolatebarinclude": "包装巧克力板",
-      "subtitles.pdy_chocolate_zhongsuozhouzhi": "",
+      "subtitles.pdy_chocolate_zhongsuozhouzhi": "潘大杨：众所周知",
       "item.golden_ticket.pdy_spawn_egg": "潘大杨刷怪蛋",
       "item.golden_ticket.everlasting_gobstopper": "美味持久硬糖",
-      "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang": "",
+      "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang": "潘大杨：全自动超级巧克力工厂",
       "item.golden_ticket.goldenticket": "金券",
       "item.golden_ticket.packet_chocolate_bar": "包装巧克力板",
       "item.golden_ticket.everlasting_gobstopper.description_0": "似乎能一直吃……",
-      "subtitles.pdy_chocolate_renyangyitouniu": "",
+      "subtitles.pdy_chocolate_renyangyitouniu": "潘大杨：认养一头牛",
       "entity.golden_ticket.pdy": "潘大杨",
-      "subtitles.pdy_chocolate1": ""
+      "subtitles.pdy_chocolate1": "潘大杨：巧克力工厂"
     }
   },
   "foldersRoot": {

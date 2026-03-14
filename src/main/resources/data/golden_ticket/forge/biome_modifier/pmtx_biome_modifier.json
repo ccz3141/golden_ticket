@@ -4,7 +4,7 @@
     "type": "forge:any"
   },
   "spawners": {
-    "type": "golden_ticket:pdy",
+    "type": "golden_ticket:pmtx",
     "weight": 6,
     "minCount": 1,
     "maxCount": 3

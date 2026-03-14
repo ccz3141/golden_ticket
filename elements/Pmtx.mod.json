@@ -2,10 +2,10 @@
   "_fv": 73,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Pdy",
-    "mobLabel": "Pan_Da_Yang",
+    "mobName": "Pmtx",
+    "mobLabel": "pmtx",
     "mobModelName": "Biped",
-    "mobModelTexture": "pdy.png",
+    "mobModelTexture": "sha_fu_fu_.png",
     "transparentModelCondition": {
       "fixedValue": false
     },
@@ -29,11 +29,11 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -6044161,
+      "value": -13434676,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -1,
+      "value": -3342337,
       "falpha": 0.0
     },
     "creativeTabs": [
@@ -68,12 +68,12 @@
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
     "movementSpeed": 0.4,
-    "stepHeight": 0.8,
+    "stepHeight": 0.6,
     "armorBaseValue": 1.0,
     "trackingRange": 64,
     "followRange": 16,
     "health": 64,
-    "xpAmount": 114,
+    "xpAmount": 10,
     "waterMob": false,
     "breatheUnderwater": {
       "fixedValue": false
@@ -102,35 +102,32 @@
     "immuneToWither": true,
     "immuneToDragonBreath": true,
     "mobDrop": {
-      "value": "CUSTOM:PacketChocolatebarinclude"
+      "value": "Blocks.AIR"
     },
     "livingSound": {
       "value": ""
     },
     "hurtSound": {
-      "value": "CUSTOM:pdy_chocolate_zhongsuozhouzhi"
+      "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "CUSTOM:pdy_chocolate_quanzidongchaojiqiaokeligongchang"
+      "value": "entity.generic.death"
     },
     "stepSound": {
-      "value": "CUSTOM:pdy_chocolate_renyangyitouniu"
+      "value": ""
     },
     "raidCelebrationSound": {
       "value": ""
     },
     "entityDataEntries": [],
-    "onRightClickedOn": {
-      "name": "Pdy_get_chocolate"
-    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"move_indoors\"><field name=\"condition\">null,null</field><next><block type=\"doors_close\"><field name=\"condition\">null,null</field><next><block type=\"follow_item_in_hands\"><field name=\"speed\">1</field><field name=\"scared\">FALSE</field><field name=\"condition\">null,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:PacketChocolateBar</field></block></value><next><block type=\"follow_item_in_hands\"><field name=\"speed\">1</field><field name=\"scared\">FALSE</field><field name=\"condition\">null,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:PacketChocolatebarinclude</field></block></value><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"doors_open\"><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"doors_open\"><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"move_indoors\"><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"doors_close\"><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": true,
     "tameable": false,
     "breedTriggerItems": [
       {
-        "value": "CUSTOM:PacketChocolatebarinclude"
+        "value": "Blocks.AIR"
       }
     ],
     "ranged": false,

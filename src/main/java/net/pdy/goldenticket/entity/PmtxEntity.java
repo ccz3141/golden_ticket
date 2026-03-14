@@ -1,15 +1,12 @@
 
 package net.pdy.goldenticket.entity;
 
-import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.*;
@@ -18,32 +15,29 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.animal.Animal;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.pdy.goldenticket.procedures.Pdy_get_chocolateProcedure;
-import net.pdy.goldenticket.init.GoldenTicketModItems;
 import net.pdy.goldenticket.init.GoldenTicketModEntities;
 
-public class PdyEntity extends Animal {
-	public PdyEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(GoldenTicketModEntities.PDY.get(), world);
+public class PmtxEntity extends Animal {
+	public PmtxEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(GoldenTicketModEntities.PMTX.get(), world);
 	}
 
-	public PdyEntity(EntityType<PdyEntity> type, Level world) {
+	public PmtxEntity(EntityType<PmtxEntity> type, Level world) {
 		super(type, world);
-		setMaxUpStep(0.8f);
-		xpReward = 114;
+		setMaxUpStep(0.6f);
+		xpReward = 10;
 		setNoAi(false);
-		setCustomName(Component.literal("Pan_Da_Yang"));
+		setCustomName(Component.literal("pmtx"));
 		setCustomNameVisible(true);
 	}
 
@@ -62,15 +56,13 @@ public class PdyEntity extends Animal {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
-		this.goalSelector.addGoal(2, new MoveBackToVillageGoal(this, 0.6, false));
-		this.goalSelector.addGoal(3, new OpenDoorGoal(this, false));
-		this.goalSelector.addGoal(4, new TemptGoal(this, 1, Ingredient.of(GoldenTicketModItems.PACKET_CHOCOLATE_BAR.get()), false));
-		this.goalSelector.addGoal(5, new TemptGoal(this, 1, Ingredient.of(GoldenTicketModItems.PACKET_CHOCOLATEBARINCLUDE.get()), false));
-		this.targetSelector.addGoal(6, new HurtByTargetGoal(this).setAlertOthers());
-		this.goalSelector.addGoal(7, new RandomStrollGoal(this, 1));
-		this.goalSelector.addGoal(8, new OpenDoorGoal(this, true));
-		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(10, new FloatGoal(this));
+		this.goalSelector.addGoal(2, new OpenDoorGoal(this, true));
+		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(4, new MoveBackToVillageGoal(this, 0.6, false));
+		this.targetSelector.addGoal(5, new HurtByTargetGoal(this).setAlertOthers());
+		this.goalSelector.addGoal(6, new OpenDoorGoal(this, false));
+		this.goalSelector.addGoal(7, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(8, new FloatGoal(this));
 	}
 
 	@Override
@@ -85,22 +77,17 @@ public class PdyEntity extends Animal {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(GoldenTicketModItems.PACKET_CHOCOLATEBARINCLUDE.get()));
-	}
-
-	@Override
-	public void playStepSound(BlockPos pos, BlockState blockIn) {
-		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pdy_chocolate_renyangyitouniu")), 0.15f, 1);
+		this.spawnAtLocation(new ItemStack(Blocks.AIR));
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pdy_chocolate_zhongsuozhouzhi"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pdy_chocolate_quanzidongchaojiqiaokeligongchang"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
 	}
 
 	@Override
@@ -143,34 +130,19 @@ public class PdyEntity extends Animal {
 	}
 
 	@Override
-	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
-		ItemStack itemstack = sourceentity.getItemInHand(hand);
-		InteractionResult retval = InteractionResult.sidedSuccess(this.level().isClientSide());
-		super.mobInteract(sourceentity, hand);
-		double x = this.getX();
-		double y = this.getY();
-		double z = this.getZ();
-		Entity entity = this;
-		Level world = this.level();
-
-		Pdy_get_chocolateProcedure.execute(entity);
-		return retval;
-	}
-
-	@Override
 	public AgeableMob getBreedOffspring(ServerLevel serverWorld, AgeableMob ageable) {
-		PdyEntity retval = GoldenTicketModEntities.PDY.get().create(serverWorld);
+		PmtxEntity retval = GoldenTicketModEntities.PMTX.get().create(serverWorld);
 		retval.finalizeSpawn(serverWorld, serverWorld.getCurrentDifficultyAt(retval.blockPosition()), MobSpawnType.BREEDING, null, null);
 		return retval;
 	}
 
 	@Override
 	public boolean isFood(ItemStack stack) {
-		return Ingredient.of(new ItemStack(GoldenTicketModItems.PACKET_CHOCOLATEBARINCLUDE.get())).test(stack);
+		return Ingredient.of(new ItemStack(Blocks.AIR)).test(stack);
 	}
 
 	public static void init() {
-		SpawnPlacements.register(GoldenTicketModEntities.PDY.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
+		SpawnPlacements.register(GoldenTicketModEntities.PMTX.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

@@ -16,12 +16,15 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.pdy.goldenticket.entity.PdyEntity;
 import net.pdy.goldenticket.GoldenTicketMod;
+import net.pdy.goldenticket.entity.PmtxEntity;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class GoldenTicketModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, GoldenTicketMod.MODID);
 	public static final RegistryObject<EntityType<PdyEntity>> PDY = register("pdy",
 			EntityType.Builder.<PdyEntity>of(PdyEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PdyEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PmtxEntity>> PMTX = register("pmtx",
+			EntityType.Builder.<PmtxEntity>of(PmtxEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PmtxEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -33,11 +36,13 @@ public class GoldenTicketModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			PdyEntity.init();
+			PmtxEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(PDY.get(), PdyEntity.createAttributes().build());
+		event.put(PMTX.get(), PmtxEntity.createAttributes().build());
 	}
 }

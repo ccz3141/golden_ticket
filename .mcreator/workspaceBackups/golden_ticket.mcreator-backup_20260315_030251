@@ -3,8 +3,8 @@
     {
       "name": "Chocolate",
       "type": "procedure",
-      "compiles": false,
-      "locked_code": false,
+      "compiles": true,
+      "locked_code": true,
       "registry_name": "chocolate",
       "metadata": {
         "files": [
@@ -30,8 +30,8 @@
     {
       "name": "PacketChocolateBar",
       "type": "item",
-      "compiles": false,
-      "locked_code": false,
+      "compiles": true,
+      "locked_code": true,
       "registry_name": "packet_chocolate_bar",
       "metadata": {
         "files": [
@@ -44,8 +44,8 @@
     {
       "name": "Pdy_get_chocolate",
       "type": "procedure",
-      "compiles": true,
-      "locked_code": true,
+      "compiles": false,
+      "locked_code": false,
       "registry_name": "pdy_get_chocolate",
       "metadata": {
         "files": [
@@ -55,10 +55,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -67,8 +63,8 @@
     {
       "name": "Pdy",
       "type": "livingentity",
-      "compiles": true,
-      "locked_code": true,
+      "compiles": false,
+      "locked_code": false,
       "registry_name": "pdy",
       "metadata": {
         "files": [
@@ -81,29 +77,10 @@
       "path": "~/entity"
     },
     {
-      "name": "Everlasting_Gobstopper",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "everlasting_gobstopper",
-      "metadata": {
-        "files": [
-          "src/main/java/net/pdy/goldenticket/procedures/Everlasting_GobstopperProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/item"
-    },
-    {
       "name": "EverlastingGobstopper",
       "type": "item",
-      "compiles": false,
-      "locked_code": false,
+      "compiles": true,
+      "locked_code": true,
       "registry_name": "everlasting_gobstopper",
       "metadata": {
         "files": [
@@ -116,8 +93,8 @@
     {
       "name": "PacketChocolatebarinclude",
       "type": "item",
-      "compiles": false,
-      "locked_code": false,
+      "compiles": true,
+      "locked_code": true,
       "registry_name": "packet_chocolatebarinclude",
       "metadata": {
         "files": [
@@ -144,8 +121,8 @@
     {
       "name": "Golden_ticket",
       "type": "procedure",
-      "compiles": false,
-      "locked_code": false,
+      "compiles": true,
+      "locked_code": true,
       "registry_name": "golden_ticket",
       "metadata": {
         "files": [
@@ -219,16 +196,25 @@
         ]
       },
       "path": "~/entity"
-    }
-  ],
-  "variable_elements": [
+    },
     {
-      "name": "pdy_get_chocolate",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
+      "name": "Pmtx",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pmtx",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/golden_ticket/forge/biome_modifier/pmtx_biome_modifier.json",
+          "src/main/java/net/pdy/goldenticket/entity/PmtxEntity.java",
+          "src/main/resources/assets/golden_ticket/models/item/pmtx_spawn_egg.json",
+          "src/main/java/net/pdy/goldenticket/client/renderer/PmtxRenderer.java"
+        ]
+      },
+      "path": "~/entity"
     }
   ],
+  "variable_elements": [],
   "sound_elements": [
     {
       "name": "pdy_chocolate1",
@@ -274,29 +260,33 @@
   "language_map": {
     "en_us": {
       "item.golden_ticket.packet_chocolatebarinclude": "Packet Chocolate Bar",
-      "subtitles.pdy_chocolate_zhongsuozhouzhi": "潘大杨：众所周知",
+      "subtitles.pdy_chocolate_zhongsuozhouzhi": "Pan_Da_Yang:…(Chinese)…",
       "item.golden_ticket.pdy_spawn_egg": "Pdy Spawn Egg",
-      "item.golden_ticket.everlasting_gobstopper": "Everlasting Gobstopper",
-      "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang": "潘大杨：全自动超级巧克力工厂",
+      "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang": "Pan_Da_Yang:…(Chinese)…",
       "item.golden_ticket.goldenticket": "Goldenticket",
       "item.golden_ticket.packet_chocolate_bar": "Packet Chocolate Bar",
-      "item.golden_ticket.everlasting_gobstopper.description_0": "似乎永远都吃不完……",
-      "subtitles.pdy_chocolate_renyangyitouniu": "潘大杨：认养一头牛",
+      "item.golden_ticket.everlasting_gobstopper.description_0": "Perhaps it is able to eat continously",
       "entity.golden_ticket.pdy": "Pdy",
-      "subtitles.pdy_chocolate1": "潘大杨：巧克力工厂"
+      "subtitles.pdy_chocolate1": "Pan_Da_Yang:…(Chinese)…",
+      "item.golden_ticket.everlasting_gobstopper": "Everlasting Gobstopper",
+      "item.golden_ticket.pmtx_spawn_egg": "Pmtx Spawn Egg",
+      "entity.golden_ticket.pmtx": "Pmtx",
+      "subtitles.pdy_chocolate_renyangyitouniu": "Pan_Da_Yang:…(Chinese)…"
     },
     "zh_cn": {
       "item.golden_ticket.packet_chocolatebarinclude": "包装巧克力板",
-      "subtitles.pdy_chocolate_zhongsuozhouzhi": "",
+      "subtitles.pdy_chocolate_zhongsuozhouzhi": "潘大杨：众所周知",
       "item.golden_ticket.pdy_spawn_egg": "潘大杨刷怪蛋",
-      "item.golden_ticket.everlasting_gobstopper": "美味持久硬糖",
-      "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang": "",
+      "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang": "潘大杨：全自动超级巧克力工厂",
       "item.golden_ticket.goldenticket": "金券",
       "item.golden_ticket.packet_chocolate_bar": "包装巧克力板",
       "item.golden_ticket.everlasting_gobstopper.description_0": "似乎能一直吃……",
-      "subtitles.pdy_chocolate_renyangyitouniu": "",
       "entity.golden_ticket.pdy": "潘大杨",
-      "subtitles.pdy_chocolate1": ""
+      "subtitles.pdy_chocolate1": "潘大杨：巧克力工厂",
+      "item.golden_ticket.everlasting_gobstopper": "美味持久硬糖",
+      "item.golden_ticket.pmtx_spawn_egg": "Pmtx Spawn Egg",
+      "entity.golden_ticket.pmtx": "Pmtx",
+      "subtitles.pdy_chocolate_renyangyitouniu": "潘大杨：认养一头牛"
     }
   },
   "foldersRoot": {
@@ -318,7 +308,7 @@
     "version": "1.1.4-514",
     "description": "威力网卡的金圆券，1.20.1Forge重制版by ccz3141",
     "author": "ccz3141",
-    "websiteURL": "https://mcreator.net",
+    "websiteURL": "无(no)",
     "license": "All Rights Reserved",
     "serverSideOnly": true,
     "modPicture": "packeted_chocolate_bar",

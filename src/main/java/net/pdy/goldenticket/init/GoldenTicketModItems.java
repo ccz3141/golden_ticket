@@ -22,6 +22,7 @@ public class GoldenTicketModItems {
 	public static final RegistryObject<Item> EVERLASTING_GOBSTOPPER = REGISTRY.register("everlasting_gobstopper", () -> new EverlastingGobstopperItem());
 	public static final RegistryObject<Item> PACKET_CHOCOLATEBARINCLUDE = REGISTRY.register("packet_chocolatebarinclude", () -> new PacketChocolatebarincludeItem());
 	public static final RegistryObject<Item> GOLDENTICKET = REGISTRY.register("goldenticket", () -> new GoldenticketItem());
+	public static final RegistryObject<Item> PMTX_SPAWN_EGG = REGISTRY.register("pmtx_spawn_egg", () -> new ForgeSpawnEggItem(GoldenTicketModEntities.PMTX, -13434676, -3342337, new Item.Properties()));
 	// Start of user code block custom items
 	// End of user code block custom items
 }
