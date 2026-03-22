@@ -1,0 +1,15 @@
+Java Launcher: /Library/Java/JavaVirtualMachines/jdk-17.0.15.jdk/Contents/Home/bin/java
+Arguments: '--task, SRG_TO_MCP, --input, /Users/caesar/.gradle/caches/modules-2/files-2.1/curse.maven/create-confectionery-531834/4835793/75b39587e643a2af31e5d0db822a94aaa5d13f08/create-confectionery-531834-4835793.jar, --output, /Users/caesar/.gradle/caches/forge_gradle/deobf_dependencies/curse/maven/create-confectionery-531834/4835793_mapped_official_1.20.1/create-confectionery-531834-4835793_mapped_official_1.20.1.jar, --mcp, /Users/caesar/.gradle/caches/forge_gradle/mcp_repo/net/minecraft/mapping/1.20.1/mapping-1.20.1-mapping.zip, --strip-signatures'
+Classpath:
+ - /Users/caesar/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/installertools/1.4.4/installertools-1.4.4-fatjar.jar
+Working directory: /Users/caesar/golden_ticket/build/_RenameSrg2Mcp_-1803409950
+Main class: net.minecraftforge.installertools.ConsoleTool
+====================================
+Task: SRG_TO_MCP
+Input:  /Users/caesar/.gradle/caches/modules-2/files-2.1/curse.maven/create-confectionery-531834/4835793/75b39587e643a2af31e5d0db822a94aaa5d13f08/create-confectionery-531834-4835793.jar
+Output: /Users/caesar/.gradle/caches/forge_gradle/deobf_dependencies/curse/maven/create-confectionery-531834/4835793_mapped_official_1.20.1/create-confectionery-531834-4835793_mapped_official_1.20.1.jar
+MCP:    /Users/caesar/.gradle/caches/forge_gradle/mcp_repo/net/minecraft/mapping/1.20.1/mapping-1.20.1-mapping.zip
+Loading MCP Data
+Processing ZIP file
+Stripped Manifest of sha digests
+Process complete

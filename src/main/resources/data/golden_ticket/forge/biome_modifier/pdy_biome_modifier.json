@@ -5,7 +5,7 @@
   },
   "spawners": {
     "type": "golden_ticket:pdy",
-    "weight": 6,
+    "weight": 4,
     "minCount": 1,
     "maxCount": 3
   }

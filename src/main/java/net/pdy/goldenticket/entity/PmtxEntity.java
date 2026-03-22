@@ -1,12 +1,14 @@
 
 package net.pdy.goldenticket.entity;
 
+import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.*;
@@ -21,6 +23,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.network.PlayMessages;
@@ -56,13 +59,14 @@ public class PmtxEntity extends Animal {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
-		this.goalSelector.addGoal(2, new OpenDoorGoal(this, true));
-		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 1));
-		this.goalSelector.addGoal(4, new MoveBackToVillageGoal(this, 0.6, false));
-		this.targetSelector.addGoal(5, new HurtByTargetGoal(this).setAlertOthers());
-		this.goalSelector.addGoal(6, new OpenDoorGoal(this, false));
+		this.goalSelector.addGoal(2, new MoveBackToVillageGoal(this, 0.6, false));
+		this.goalSelector.addGoal(3, new OpenDoorGoal(this, false));
+		this.goalSelector.addGoal(4, new BreedGoal(this, 1));
+		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(6, new FloatGoal(this));
 		this.goalSelector.addGoal(7, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(8, new FloatGoal(this));
+		this.goalSelector.addGoal(8, new OpenDoorGoal(this, true));
+		this.targetSelector.addGoal(9, new HurtByTargetGoal(this).setAlertOthers());
 	}
 
 	@Override
@@ -81,13 +85,18 @@ public class PmtxEntity extends Animal {
 	}
 
 	@Override
+	public void playStepSound(BlockPos pos, BlockState blockIn) {
+		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pmtx_walking")), 0.15f, 1);
+	}
+
+	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pmtx_hurt_omg"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pmtx_e_"));
 	}
 
 	@Override
@@ -138,7 +147,7 @@ public class PmtxEntity extends Animal {
 
 	@Override
 	public boolean isFood(ItemStack stack) {
-		return Ingredient.of(new ItemStack(Blocks.AIR)).test(stack);
+		return Ingredient.of(ItemTags.create(new ResourceLocation("forge:pmtxfood"))).test(stack);
 	}
 
 	public static void init() {

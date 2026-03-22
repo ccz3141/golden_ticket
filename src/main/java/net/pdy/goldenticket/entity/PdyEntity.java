@@ -8,6 +8,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
@@ -64,13 +65,14 @@ public class PdyEntity extends Animal {
 		});
 		this.goalSelector.addGoal(2, new MoveBackToVillageGoal(this, 0.6, false));
 		this.goalSelector.addGoal(3, new OpenDoorGoal(this, false));
-		this.goalSelector.addGoal(4, new TemptGoal(this, 1, Ingredient.of(GoldenTicketModItems.PACKET_CHOCOLATE_BAR.get()), false));
-		this.goalSelector.addGoal(5, new TemptGoal(this, 1, Ingredient.of(GoldenTicketModItems.PACKET_CHOCOLATEBARINCLUDE.get()), false));
-		this.targetSelector.addGoal(6, new HurtByTargetGoal(this).setAlertOthers());
-		this.goalSelector.addGoal(7, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(4, new BreedGoal(this, 1));
+		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(6, new FloatGoal(this));
+		this.goalSelector.addGoal(7, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(8, new OpenDoorGoal(this, true));
-		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(10, new FloatGoal(this));
+		this.goalSelector.addGoal(9, new TemptGoal(this, 1, Ingredient.of(GoldenTicketModItems.PACKET_CHOCOLATE_BAR.get()), false));
+		this.goalSelector.addGoal(10, new TemptGoal(this, 1, Ingredient.of(GoldenTicketModItems.PACKET_CHOCOLATEBARINCLUDE.get()), false));
+		this.targetSelector.addGoal(11, new HurtByTargetGoal(this));
 	}
 
 	@Override
@@ -81,11 +83,6 @@ public class PdyEntity extends Animal {
 	@Override
 	public double getMyRidingOffset() {
 		return -0.35D;
-	}
-
-	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
-		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(GoldenTicketModItems.PACKET_CHOCOLATEBARINCLUDE.get()));
 	}
 
 	@Override
@@ -166,7 +163,7 @@ public class PdyEntity extends Animal {
 
 	@Override
 	public boolean isFood(ItemStack stack) {
-		return Ingredient.of(new ItemStack(GoldenTicketModItems.PACKET_CHOCOLATEBARINCLUDE.get())).test(stack);
+		return Ingredient.of(ItemTags.create(new ResourceLocation("forge:pdyfood"))).test(stack);
 	}
 
 	public static void init() {

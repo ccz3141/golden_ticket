@@ -22,6 +22,7 @@ public class GoldenTicketModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(GoldenTicketModItems.PDY_SPAWN_EGG.get());
 			tabData.accept(GoldenTicketModItems.PMTX_SPAWN_EGG.get());
+			tabData.accept(GoldenTicketModItems.COMPUTER_1101_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(GoldenTicketModItems.GOLDENTICKET.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {

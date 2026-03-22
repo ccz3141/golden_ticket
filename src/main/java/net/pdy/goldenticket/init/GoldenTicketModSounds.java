@@ -18,4 +18,8 @@ public class GoldenTicketModSounds {
 	public static final RegistryObject<SoundEvent> PDY_CHOCOLATE_QUANZIDONGCHAOJIQIAOKELIGONGCHANG = REGISTRY.register("pdy_chocolate_quanzidongchaojiqiaokeligongchang",
 			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("golden_ticket", "pdy_chocolate_quanzidongchaojiqiaokeligongchang")));
 	public static final RegistryObject<SoundEvent> PDY_CHOCOLATE_RENYANGYITOUNIU = REGISTRY.register("pdy_chocolate_renyangyitouniu", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("golden_ticket", "pdy_chocolate_renyangyitouniu")));
+	public static final RegistryObject<SoundEvent> PMTX_HURT_OMG = REGISTRY.register("pmtx_hurt_omg", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("golden_ticket", "pmtx_hurt_omg")));
+	public static final RegistryObject<SoundEvent> PMTX_WALKING = REGISTRY.register("pmtx_walking", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("golden_ticket", "pmtx_walking")));
+	public static final RegistryObject<SoundEvent> PMTX_E_ = REGISTRY.register("pmtx_e_", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("golden_ticket", "pmtx_e_")));
+	public static final RegistryObject<SoundEvent> COMPUTER_AFA = REGISTRY.register("computer_afa", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("golden_ticket", "computer_afa")));
 }

@@ -15,6 +15,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.pdy.goldenticket.entity.PdyEntity;
+import net.pdy.goldenticket.entity.Computer1101Entity;
 import net.pdy.goldenticket.GoldenTicketMod;
 import net.pdy.goldenticket.entity.PmtxEntity;
 
@@ -25,6 +26,8 @@ public class GoldenTicketModEntities {
 			EntityType.Builder.<PdyEntity>of(PdyEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PdyEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<PmtxEntity>> PMTX = register("pmtx",
 			EntityType.Builder.<PmtxEntity>of(PmtxEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PmtxEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<Computer1101Entity>> COMPUTER_1101 = register("computer_1101", EntityType.Builder.<Computer1101Entity>of(Computer1101Entity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(Computer1101Entity::new).fireImmune().sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -37,6 +40,7 @@ public class GoldenTicketModEntities {
 		event.enqueueWork(() -> {
 			PdyEntity.init();
 			PmtxEntity.init();
+			Computer1101Entity.init();
 		});
 	}
 
@@ -44,5 +48,6 @@ public class GoldenTicketModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(PDY.get(), PdyEntity.createAttributes().build());
 		event.put(PMTX.get(), PmtxEntity.createAttributes().build());
+		event.put(COMPUTER_1101.get(), Computer1101Entity.createAttributes().build());
 	}
 }

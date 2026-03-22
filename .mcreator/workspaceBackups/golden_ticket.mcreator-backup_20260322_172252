@@ -44,8 +44,8 @@
     {
       "name": "Pdy_get_chocolate",
       "type": "procedure",
-      "compiles": false,
-      "locked_code": false,
+      "compiles": true,
+      "locked_code": true,
       "registry_name": "pdy_get_chocolate",
       "metadata": {
         "files": [
@@ -64,7 +64,7 @@
       "name": "Pdy",
       "type": "livingentity",
       "compiles": false,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "pdy",
       "metadata": {
         "files": [
@@ -200,8 +200,8 @@
     {
       "name": "Pmtx",
       "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
+      "compiles": false,
+      "locked_code": true,
       "registry_name": "pmtx",
       "metadata": {
         "files": [
@@ -209,6 +209,87 @@
           "src/main/java/net/pdy/goldenticket/entity/PmtxEntity.java",
           "src/main/resources/assets/golden_ticket/models/item/pmtx_spawn_egg.json",
           "src/main/java/net/pdy/goldenticket/client/renderer/PmtxRenderer.java"
+        ]
+      },
+      "path": "~/entity"
+    },
+    {
+      "name": "Pdy1",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pdy_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/golden_ticket/loot_tables/entities/pdy.json"
+        ]
+      },
+      "path": "~/entity"
+    },
+    {
+      "name": "Pmtxspawneggrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pmtxspawneggrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/golden_ticket/recipes/pmtxspawneggrecipe.json"
+        ]
+      },
+      "path": "~/entity"
+    },
+    {
+      "name": "Pmtx1",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pmtx_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/golden_ticket/loot_tables/entities/pmtx.json"
+        ]
+      },
+      "path": "~/entity"
+    },
+    {
+      "name": "Computer1101",
+      "type": "livingentity",
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "computer_1101",
+      "metadata": {
+        "files": [
+          "src/main/java/net/pdy/goldenticket/entity/Computer1101Entity.java",
+          "src/main/resources/data/golden_ticket/forge/biome_modifier/computer_1101_biome_modifier.json",
+          "src/main/java/net/pdy/goldenticket/client/renderer/Computer1101Renderer.java",
+          "src/main/resources/assets/golden_ticket/models/item/computer_1101_spawn_egg.json"
+        ]
+      },
+      "path": "~/entity"
+    },
+    {
+      "name": "Computer1101spawneggrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "computer_1101spawneggrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/golden_ticket/recipes/computer_1101spawneggrecipe.json"
+        ]
+      },
+      "path": "~/entity"
+    },
+    {
+      "name": "Computer11011",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "computer_11011",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/golden_ticket/loot_tables/entities/computer_1101.json"
         ]
       },
       "path": "~/entity"
@@ -247,6 +328,38 @@
       ],
       "category": "neutral",
       "subtitle": "潘大杨：认养一头牛"
+    },
+    {
+      "name": "pmtx_hurt_omg",
+      "files": [
+        "shou_shang_omg"
+      ],
+      "category": "neutral",
+      "subtitle": "pmtx:?omg?"
+    },
+    {
+      "name": "pmtx_walking",
+      "files": [
+        "pmzou_lu_ren_"
+      ],
+      "category": "neutral",
+      "subtitle": "pmtx:全自动超级建筑工茶饮工厂"
+    },
+    {
+      "name": "pmtx_e_",
+      "files": [
+        "zhan_bai_yin_xiao__e_jiu_chi_pao_mian_"
+      ],
+      "category": "neutral",
+      "subtitle": "pmyx:e—"
+    },
+    {
+      "name": "computer_afa",
+      "files": [
+        "ji_suan_ji_qia_bao_a_fa_e_dian_nao_"
+      ],
+      "category": "neutral",
+      "subtitle": "Computer1101:卡爆阿发额电脑"
     }
   ],
   "tag_elements": {},
@@ -261,32 +374,44 @@
     "en_us": {
       "item.golden_ticket.packet_chocolatebarinclude": "Packet Chocolate Bar",
       "subtitles.pdy_chocolate_zhongsuozhouzhi": "Pan_Da_Yang:…(Chinese)…",
+      "subtitles.pmtx_walking": "pmtx:全自动超级建筑工茶饮工厂",
       "item.golden_ticket.pdy_spawn_egg": "Pdy Spawn Egg",
+      "entity.golden_ticket.computer_1101": "Computer 1 1 0 1",
       "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang": "Pan_Da_Yang:…(Chinese)…",
       "item.golden_ticket.goldenticket": "Goldenticket",
       "item.golden_ticket.packet_chocolate_bar": "Packet Chocolate Bar",
       "item.golden_ticket.everlasting_gobstopper.description_0": "Perhaps it is able to eat continously",
+      "item.golden_ticket.computer_1101_spawn_egg": "Computer 1 1 0 1 Spawn Egg",
       "entity.golden_ticket.pdy": "Pdy",
       "subtitles.pdy_chocolate1": "Pan_Da_Yang:…(Chinese)…",
+      "subtitles.pmtx_e_": "pmyx:e—",
       "item.golden_ticket.everlasting_gobstopper": "Everlasting Gobstopper",
       "item.golden_ticket.pmtx_spawn_egg": "Pmtx Spawn Egg",
       "entity.golden_ticket.pmtx": "Pmtx",
-      "subtitles.pdy_chocolate_renyangyitouniu": "Pan_Da_Yang:…(Chinese)…"
+      "subtitles.pdy_chocolate_renyangyitouniu": "Pan_Da_Yang:…(Chinese)…",
+      "subtitles.pmtx_hurt_omg": "pmtx:?omg?",
+      "subtitles.computer_afa": "Computer1101:卡爆阿发额电脑"
     },
     "zh_cn": {
       "item.golden_ticket.packet_chocolatebarinclude": "包装巧克力板",
       "subtitles.pdy_chocolate_zhongsuozhouzhi": "潘大杨：众所周知",
+      "subtitles.pmtx_walking": "pmtx:?omg?",
       "item.golden_ticket.pdy_spawn_egg": "潘大杨刷怪蛋",
+      "entity.golden_ticket.computer_1101": "Computer 1 1 0 1",
       "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang": "潘大杨：全自动超级巧克力工厂",
       "item.golden_ticket.goldenticket": "金券",
       "item.golden_ticket.packet_chocolate_bar": "包装巧克力板",
       "item.golden_ticket.everlasting_gobstopper.description_0": "似乎能一直吃……",
+      "item.golden_ticket.computer_1101_spawn_egg": "Computer 1 1 0 1 Spawn Egg",
       "entity.golden_ticket.pdy": "潘大杨",
       "subtitles.pdy_chocolate1": "潘大杨：巧克力工厂",
+      "subtitles.pmtx_e_": "pmyx:e—",
       "item.golden_ticket.everlasting_gobstopper": "美味持久硬糖",
       "item.golden_ticket.pmtx_spawn_egg": "Pmtx Spawn Egg",
       "entity.golden_ticket.pmtx": "Pmtx",
-      "subtitles.pdy_chocolate_renyangyitouniu": "潘大杨：认养一头牛"
+      "subtitles.pdy_chocolate_renyangyitouniu": "潘大杨：认养一头牛",
+      "subtitles.pmtx_hurt_omg": "pmtx:omg",
+      "subtitles.computer_afa": "Computer1101:卡爆阿发额电脑"
     }
   },
   "foldersRoot": {

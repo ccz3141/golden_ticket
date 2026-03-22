@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "bdb",
+    "cba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:redstone_block"
+    },
+    "b": {
+      "item": "create:experience_block"
+    },
+    "c": {
+      "item": "minecraft:slime_block"
+    },
+    "d": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "result": {
+    "item": "golden_ticket:computer_1101_spawn_egg",
+    "count": 1
+  }
+}
