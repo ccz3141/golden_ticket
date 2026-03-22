@@ -25,12 +25,12 @@
     },
     {
       "rolls": {
-        "min": 0,
-        "max": 3
+        "min": 1,
+        "max": 2
       },
       "bonus_rolls": {
         "min": 0,
-        "max": 3
+        "max": 2
       },
       "entries": [
         {
@@ -49,7 +49,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "garnished_sweet_tea",
+          "name": "garnished:sweet_tea",
           "weight": 1,
           "functions": [
             {
@@ -469,7 +469,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "createteas:pineapple_tea",
+          "name": "createteas:pineaple_tea",
           "weight": 1,
           "functions": [
             {
@@ -497,7 +497,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "createteas:protal_s_tea",
+          "name": "createteas:portal_s_tea",
           "weight": 1,
           "functions": [
             {
@@ -651,7 +651,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "createteas:sweet_berries__tea",
+          "name": "createteas:sweet_berries_tea",
           "weight": 1,
           "functions": [
             {

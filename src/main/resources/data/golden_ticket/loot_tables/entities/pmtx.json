@@ -469,7 +469,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "createteas:pineapple_tea",
+          "name": "createteas:pineaple_tea",
           "weight": 1,
           "functions": [
             {
@@ -497,7 +497,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "createteas:protal_s_tea",
+          "name": "createteas:portal_s_tea",
           "weight": 1,
           "functions": [
             {
@@ -651,7 +651,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "createteas:sweet_berries__tea",
+          "name": "createteas:sweet_berries_tea",
           "weight": 1,
           "functions": [
             {

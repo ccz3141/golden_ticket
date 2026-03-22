@@ -3,7 +3,7 @@
     {
       "name": "Chocolate",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "chocolate",
       "metadata": {
@@ -44,7 +44,7 @@
     {
       "name": "Pdy_get_chocolate",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "pdy_get_chocolate",
       "metadata": {
@@ -107,7 +107,7 @@
     {
       "name": "Goldenticket",
       "type": "item",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "goldenticket",
       "metadata": {
@@ -121,7 +121,7 @@
     {
       "name": "Golden_ticket",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "golden_ticket",
       "metadata": {
@@ -255,7 +255,7 @@
     {
       "name": "Computer1101",
       "type": "livingentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "computer_1101",
       "metadata": {
@@ -437,7 +437,7 @@
   "workspaceSettings": {
     "modid": "golden_ticket",
     "modName": "威力潘大杨的金券",
-    "version": "1.1.4-514",
+    "version": "1.2.1",
     "description": "威力网卡的金圆券，1.20.1Forge重制版by ccz3141",
     "author": "ccz3141",
     "websiteURL": "无(no)",

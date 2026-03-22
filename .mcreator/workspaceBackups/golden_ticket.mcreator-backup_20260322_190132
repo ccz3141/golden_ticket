@@ -3,7 +3,7 @@
     {
       "name": "Chocolate",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "chocolate",
       "metadata": {
@@ -44,7 +44,7 @@
     {
       "name": "Pdy_get_chocolate",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "pdy_get_chocolate",
       "metadata": {
@@ -107,7 +107,7 @@
     {
       "name": "Goldenticket",
       "type": "item",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "goldenticket",
       "metadata": {
@@ -121,7 +121,7 @@
     {
       "name": "Golden_ticket",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "golden_ticket",
       "metadata": {
@@ -256,7 +256,7 @@
       "name": "Computer1101",
       "type": "livingentity",
       "compiles": false,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "computer_1101",
       "metadata": {
         "files": [
@@ -264,6 +264,32 @@
           "src/main/resources/data/golden_ticket/forge/biome_modifier/computer_1101_biome_modifier.json",
           "src/main/java/net/pdy/goldenticket/client/renderer/Computer1101Renderer.java",
           "src/main/resources/assets/golden_ticket/models/item/computer_1101_spawn_egg.json"
+        ]
+      },
+      "path": "~/entity"
+    },
+    {
+      "name": "Computer1101spawneggrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "computer_1101spawneggrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/golden_ticket/recipes/computer_1101spawneggrecipe.json"
+        ]
+      },
+      "path": "~/entity"
+    },
+    {
+      "name": "Computer11011",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "computer_11011",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/golden_ticket/loot_tables/entities/computer_1101.json"
         ]
       },
       "path": "~/entity"
@@ -326,9 +352,24 @@
       ],
       "category": "neutral",
       "subtitle": "pmyx:e—"
+    },
+    {
+      "name": "computer_afa",
+      "files": [
+        "ji_suan_ji_qia_bao_a_fa_e_dian_nao_"
+      ],
+      "category": "neutral",
+      "subtitle": "Computer1101:卡爆阿发额电脑"
     }
   ],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:forge:pmtxfood": [],
+    "ITEMS:forge:pdyfood": [
+      "CUSTOM:PacketChocolateBar",
+      "CUSTOM:PacketChocolatebarinclude"
+    ],
+    "ITEMS:forge:computer1101food": []
+  },
   "tab_element_order": {
     "FOOD": [
       "PacketChocolatebarinclude",
@@ -339,43 +380,45 @@
   "language_map": {
     "en_us": {
       "item.golden_ticket.packet_chocolatebarinclude": "Packet Chocolate Bar",
-      "subtitles.pdy_chocolate_zhongsuozhouzhi": "Pan_Da_Yang:…(Chinese)…",
+      "subtitles.pdy_chocolate_zhongsuozhouzhi": "Pan_Da_Yang:众所周知",
       "subtitles.pmtx_walking": "pmtx:全自动超级建筑工茶饮工厂",
       "item.golden_ticket.pdy_spawn_egg": "Pdy Spawn Egg",
-      "entity.golden_ticket.computer_1101": "Computer 1 1 0 1",
-      "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang": "Pan_Da_Yang:…(Chinese)…",
+      "entity.golden_ticket.computer_1101": "Computer1101",
+      "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang": "Pan_Da_Yang:全自动超级巧克力工厂",
       "item.golden_ticket.goldenticket": "Goldenticket",
       "item.golden_ticket.packet_chocolate_bar": "Packet Chocolate Bar",
       "item.golden_ticket.everlasting_gobstopper.description_0": "Perhaps it is able to eat continously",
-      "item.golden_ticket.computer_1101_spawn_egg": "Computer 1 1 0 1 Spawn Egg",
+      "item.golden_ticket.computer_1101_spawn_egg": "Computer1101 Spawn Egg",
       "entity.golden_ticket.pdy": "Pdy",
       "subtitles.pdy_chocolate1": "Pan_Da_Yang:…(Chinese)…",
       "subtitles.pmtx_e_": "pmyx:e—",
       "item.golden_ticket.everlasting_gobstopper": "Everlasting Gobstopper",
       "item.golden_ticket.pmtx_spawn_egg": "Pmtx Spawn Egg",
       "entity.golden_ticket.pmtx": "Pmtx",
-      "subtitles.pdy_chocolate_renyangyitouniu": "Pan_Da_Yang:…(Chinese)…",
-      "subtitles.pmtx_hurt_omg": "pmtx:?omg?"
+      "subtitles.pdy_chocolate_renyangyitouniu": "Pan_Da_Yang:认养一头牛",
+      "subtitles.pmtx_hurt_omg": "pmtx:?omg?",
+      "subtitles.computer_afa": "Computer1101:卡爆阿发额电脑"
     },
     "zh_cn": {
       "item.golden_ticket.packet_chocolatebarinclude": "包装巧克力板",
       "subtitles.pdy_chocolate_zhongsuozhouzhi": "潘大杨：众所周知",
-      "subtitles.pmtx_walking": "pmtx:?omg?",
+      "subtitles.pmtx_walking": "氵番某同学：全自动超级建筑工茶饮工厂",
       "item.golden_ticket.pdy_spawn_egg": "潘大杨刷怪蛋",
-      "entity.golden_ticket.computer_1101": "Computer 1 1 0 1",
+      "entity.golden_ticket.computer_1101": "计算机1101",
       "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang": "潘大杨：全自动超级巧克力工厂",
       "item.golden_ticket.goldenticket": "金券",
       "item.golden_ticket.packet_chocolate_bar": "包装巧克力板",
       "item.golden_ticket.everlasting_gobstopper.description_0": "似乎能一直吃……",
-      "item.golden_ticket.computer_1101_spawn_egg": "Computer 1 1 0 1 Spawn Egg",
+      "item.golden_ticket.computer_1101_spawn_egg": "计算机1101刷怪蛋",
       "entity.golden_ticket.pdy": "潘大杨",
       "subtitles.pdy_chocolate1": "潘大杨：巧克力工厂",
-      "subtitles.pmtx_e_": "pmyx:e—",
+      "subtitles.pmtx_e_": "氵番某同学：额啊",
       "item.golden_ticket.everlasting_gobstopper": "美味持久硬糖",
-      "item.golden_ticket.pmtx_spawn_egg": "Pmtx Spawn Egg",
-      "entity.golden_ticket.pmtx": "Pmtx",
+      "item.golden_ticket.pmtx_spawn_egg": "氵番某同学刷怪蛋",
+      "entity.golden_ticket.pmtx": "氵番某同学",
       "subtitles.pdy_chocolate_renyangyitouniu": "潘大杨：认养一头牛",
-      "subtitles.pmtx_hurt_omg": "pmtx:omg"
+      "subtitles.pmtx_hurt_omg": "氵番某同学：OMG",
+      "subtitles.computer_afa": "计算机1101：卡爆阿发额电脑"
     }
   },
   "foldersRoot": {
@@ -394,7 +437,7 @@
   "workspaceSettings": {
     "modid": "golden_ticket",
     "modName": "威力潘大杨的金券",
-    "version": "1.1.4-514",
+    "version": "1.2.1",
     "description": "威力网卡的金圆券，1.20.1Forge重制版by ccz3141",
     "author": "ccz3141",
     "websiteURL": "无(no)",

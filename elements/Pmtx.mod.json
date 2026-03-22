@@ -102,7 +102,7 @@
     "immuneToWither": true,
     "immuneToDragonBreath": true,
     "mobDrop": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "livingSound": {
       "value": ""
