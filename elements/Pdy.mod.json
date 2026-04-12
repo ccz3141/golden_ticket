@@ -69,11 +69,11 @@
     "knockbackResistance": 0.0,
     "movementSpeed": 0.4,
     "stepHeight": 0.8,
-    "armorBaseValue": 1.0,
+    "armorBaseValue": 2.0,
     "trackingRange": 64,
     "followRange": 16,
-    "health": 64,
-    "xpAmount": 114,
+    "health": 40,
+    "xpAmount": 10,
     "waterMob": false,
     "breatheUnderwater": {
       "fixedValue": false
@@ -105,7 +105,7 @@
       "value": ""
     },
     "livingSound": {
-      "value": ""
+      "value": "CUSTOM:pdy_chocolate_quanzidongchaojiqiaokeligongchang"
     },
     "hurtSound": {
       "value": "CUSTOM:pdy_chocolate_zhongsuozhouzhi"

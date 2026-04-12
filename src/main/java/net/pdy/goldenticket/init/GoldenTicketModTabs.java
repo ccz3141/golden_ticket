@@ -25,6 +25,7 @@ public class GoldenTicketModTabs {
 			tabData.accept(GoldenTicketModItems.COMPUTER_1101_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(GoldenTicketModItems.GOLDENTICKET.get());
+			tabData.accept(GoldenTicketModItems.DICK.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(GoldenTicketModItems.PACKET_CHOCOLATEBARINCLUDE.get());
 			tabData.accept(GoldenTicketModItems.PACKET_CHOCOLATE_BAR.get());

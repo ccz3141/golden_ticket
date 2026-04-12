@@ -1,4 +1,5 @@
 {
+  "item.golden_ticket.dick": "Dick",
   "item.golden_ticket.packet_chocolatebarinclude": "包装巧克力板",
   "subtitles.pdy_chocolate_zhongsuozhouzhi": "潘大杨：众所周知",
   "subtitles.pmtx_walking": "氵番某同学：全自动超级建筑工茶饮工厂",
@@ -9,6 +10,7 @@
   "item.golden_ticket.packet_chocolate_bar": "包装巧克力板",
   "item.golden_ticket.everlasting_gobstopper.description_0": "似乎能一直吃……",
   "item.golden_ticket.computer_1101_spawn_egg": "计算机1101刷怪蛋",
+  "item.golden_ticket.dick.desc": "chocolate factory",
   "entity.golden_ticket.pdy": "潘大杨",
   "subtitles.pdy_chocolate1": "潘大杨：巧克力工厂",
   "subtitles.pmtx_e_": "氵番某同学：额啊",

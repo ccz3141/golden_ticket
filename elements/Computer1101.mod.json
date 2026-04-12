@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Computer 1 1 0 1",
+    "mobName": "Computer1101",
     "mobLabel": "Computer1101",
     "mobModelName": "Biped",
     "mobModelTexture": "computer1101.png",
@@ -64,16 +64,16 @@
     },
     "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 4,
+    "attackStrength": 5,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
     "movementSpeed": 0.4,
     "stepHeight": 0.6,
-    "armorBaseValue": 1.0,
+    "armorBaseValue": 2.0,
     "trackingRange": 64,
     "followRange": 16,
-    "health": 64,
-    "xpAmount": 1,
+    "health": 40,
+    "xpAmount": 10,
     "waterMob": false,
     "breatheUnderwater": {
       "fixedValue": false
@@ -105,7 +105,7 @@
       "value": ""
     },
     "livingSound": {
-      "value": ""
+      "value": "CUSTOM:computer_afa"
     },
     "hurtSound": {
       "value": "CUSTOM:computer_afa"

@@ -37,7 +37,7 @@ public class Computer1101Entity extends Animal {
 	public Computer1101Entity(EntityType<Computer1101Entity> type, Level world) {
 		super(type, world);
 		setMaxUpStep(0.6f);
-		xpReward = 1;
+		xpReward = 10;
 		setNoAi(false);
 		setCustomName(Component.literal("Computer1101"));
 		setCustomNameVisible(true);
@@ -76,6 +76,11 @@ public class Computer1101Entity extends Animal {
 	@Override
 	public double getMyRidingOffset() {
 		return -0.35D;
+	}
+
+	@Override
+	public SoundEvent getAmbientSound() {
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:computer_afa"));
 	}
 
 	@Override
@@ -151,9 +156,9 @@ public class Computer1101Entity extends Animal {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.4);
-		builder = builder.add(Attributes.MAX_HEALTH, 64);
-		builder = builder.add(Attributes.ARMOR, 1);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 4);
+		builder = builder.add(Attributes.MAX_HEALTH, 40);
+		builder = builder.add(Attributes.ARMOR, 2);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 5);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		return builder;
 	}

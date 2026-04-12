@@ -13,6 +13,7 @@ import net.pdy.goldenticket.item.PacketChocolatebarincludeItem;
 import net.pdy.goldenticket.item.PacketChocolateBarItem;
 import net.pdy.goldenticket.item.GoldenticketItem;
 import net.pdy.goldenticket.item.EverlastingGobstopperItem;
+import net.pdy.goldenticket.item.DickItem;
 import net.pdy.goldenticket.GoldenTicketMod;
 
 public class GoldenTicketModItems {
@@ -24,6 +25,7 @@ public class GoldenTicketModItems {
 	public static final RegistryObject<Item> GOLDENTICKET = REGISTRY.register("goldenticket", () -> new GoldenticketItem());
 	public static final RegistryObject<Item> PMTX_SPAWN_EGG = REGISTRY.register("pmtx_spawn_egg", () -> new ForgeSpawnEggItem(GoldenTicketModEntities.PMTX, -13434676, -3342337, new Item.Properties()));
 	public static final RegistryObject<Item> COMPUTER_1101_SPAWN_EGG = REGISTRY.register("computer_1101_spawn_egg", () -> new ForgeSpawnEggItem(GoldenTicketModEntities.COMPUTER_1101, -10066330, -10066330, new Item.Properties()));
+	public static final RegistryObject<Item> DICK = REGISTRY.register("dick", () -> new DickItem());
 	// Start of user code block custom items
 	// End of user code block custom items
 }

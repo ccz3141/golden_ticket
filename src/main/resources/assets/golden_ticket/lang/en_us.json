@@ -1,4 +1,5 @@
 {
+  "item.golden_ticket.dick": "Dick",
   "item.golden_ticket.packet_chocolatebarinclude": "Packet Chocolate Bar",
   "subtitles.pdy_chocolate_zhongsuozhouzhi": "Pan_Da_Yang:众所周知",
   "subtitles.pmtx_walking": "pmtx:全自动超级建筑工茶饮工厂",
@@ -9,6 +10,7 @@
   "item.golden_ticket.packet_chocolate_bar": "Packet Chocolate Bar",
   "item.golden_ticket.everlasting_gobstopper.description_0": "Perhaps it is able to eat continously",
   "item.golden_ticket.computer_1101_spawn_egg": "Computer1101 Spawn Egg",
+  "item.golden_ticket.dick.desc": "chocolate factory",
   "entity.golden_ticket.pdy": "Pdy",
   "subtitles.pdy_chocolate1": "Pan_Da_Yang:…(Chinese)…",
   "subtitles.pmtx_e_": "pmyx:e—",

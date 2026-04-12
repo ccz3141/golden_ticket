@@ -63,7 +63,7 @@
     {
       "name": "Pdy",
       "type": "livingentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "pdy",
       "metadata": {
@@ -200,7 +200,7 @@
     {
       "name": "Pmtx",
       "type": "livingentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "pmtx",
       "metadata": {
@@ -256,7 +256,7 @@
       "name": "Computer1101",
       "type": "livingentity",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "computer_1101",
       "metadata": {
         "files": [
@@ -293,6 +293,33 @@
         ]
       },
       "path": "~/entity"
+    },
+    {
+      "name": "Dick",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/pdy/goldenticket/item/DickItem.java",
+          "src/main/resources/assets/golden_ticket/models/item/dick.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Dickrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dickrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/golden_ticket/recipes/dickrecipe.json"
+        ]
+      },
+      "path": "~/item"
     }
   ],
   "variable_elements": [],
@@ -368,7 +395,10 @@
       "CUSTOM:PacketChocolateBar",
       "CUSTOM:PacketChocolatebarinclude"
     ],
-    "ITEMS:forge:computer1101food": []
+    "ITEMS:forge:computer1101food": [],
+    "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:Dick"
+    ]
   },
   "tab_element_order": {
     "FOOD": [
@@ -379,6 +409,7 @@
   },
   "language_map": {
     "en_us": {
+      "item.golden_ticket.dick": "Dick",
       "item.golden_ticket.packet_chocolatebarinclude": "Packet Chocolate Bar",
       "subtitles.pdy_chocolate_zhongsuozhouzhi": "Pan_Da_Yang:众所周知",
       "subtitles.pmtx_walking": "pmtx:全自动超级建筑工茶饮工厂",
@@ -389,6 +420,7 @@
       "item.golden_ticket.packet_chocolate_bar": "Packet Chocolate Bar",
       "item.golden_ticket.everlasting_gobstopper.description_0": "Perhaps it is able to eat continously",
       "item.golden_ticket.computer_1101_spawn_egg": "Computer1101 Spawn Egg",
+      "item.golden_ticket.dick.desc": "chocolate factory",
       "entity.golden_ticket.pdy": "Pdy",
       "subtitles.pdy_chocolate1": "Pan_Da_Yang:…(Chinese)…",
       "subtitles.pmtx_e_": "pmyx:e—",
@@ -400,6 +432,7 @@
       "subtitles.computer_afa": "Computer1101:卡爆阿发额电脑"
     },
     "zh_cn": {
+      "item.golden_ticket.dick": "Dick",
       "item.golden_ticket.packet_chocolatebarinclude": "包装巧克力板",
       "subtitles.pdy_chocolate_zhongsuozhouzhi": "潘大杨：众所周知",
       "subtitles.pmtx_walking": "氵番某同学：全自动超级建筑工茶饮工厂",
@@ -410,6 +443,7 @@
       "item.golden_ticket.packet_chocolate_bar": "包装巧克力板",
       "item.golden_ticket.everlasting_gobstopper.description_0": "似乎能一直吃……",
       "item.golden_ticket.computer_1101_spawn_egg": "计算机1101刷怪蛋",
+      "item.golden_ticket.dick.desc": "chocolate factory",
       "entity.golden_ticket.pdy": "潘大杨",
       "subtitles.pdy_chocolate1": "潘大杨：巧克力工厂",
       "subtitles.pmtx_e_": "氵番某同学：额啊",

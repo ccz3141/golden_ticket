@@ -79,6 +79,11 @@ public class PmtxEntity extends Animal {
 	}
 
 	@Override
+	public SoundEvent getAmbientSound() {
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pmtx_walking"));
+	}
+
+	@Override
 	public void playStepSound(BlockPos pos, BlockState blockIn) {
 		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pmtx_walking")), 0.15f, 1);
 	}
@@ -151,8 +156,8 @@ public class PmtxEntity extends Animal {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.4);
-		builder = builder.add(Attributes.MAX_HEALTH, 64);
-		builder = builder.add(Attributes.ARMOR, 1);
+		builder = builder.add(Attributes.MAX_HEALTH, 40);
+		builder = builder.add(Attributes.ARMOR, 2);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 5);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		return builder;
