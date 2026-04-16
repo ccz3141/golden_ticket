@@ -42,9 +42,39 @@ minecraft {
     }
 }
 
+repositories {
+    maven { url = "https://maven.createmod.net" }
+    maven { url = "https://maven.ithundxr.dev/mirror" }
+    maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" }
+    maven { url = "https://cursemaven.com"}
+    // create-delicious-teas一直拉取失败，暂时用本地库
+    flatDir {
+        dirs 'libs'
+    }
+}
+
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.20.1-47.3.0'
+    minecraft 'net.minecraftforge:forge:1.20.1-47.4.0'
     implementation 'org.apache.logging.log4j:log4j-core:2.20.0'
+
+    // 机械动力 (Create)
+    implementation fg.deobf("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") {
+        transitive = false
+    }
+    implementation(fg.deobf("net.createmod.ponder:Ponder-Forge-${minecraft_version}:${ponder_version}"))
+    compileOnly(fg.deobf("dev.engine-room.flywheel:flywheel-forge-api-${minecraft_version}:${flywheel_version}"))
+    runtimeOnly(fg.deobf("dev.engine-room.flywheel:flywheel-forge-${minecraft_version}:${flywheel_version}"))
+    implementation(fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}"))
+
+    // Create Confectionery
+    implementation fg.deobf("curse.maven:create-confectionery-531834:4835793")
+    // Create Tea
+    // compileOnly fg.deobf("curse.maven:create-delicious-teas-1328556:6893693")
+    compileOnly fg.deobf(files("libs/createteas-1.0.jar"))
+    // Garnished
+    compileOnly fg.deobf("curse.maven:garnished-923277:7557977")
+    // Create Food
+    compileOnly fg.deobf("curse.maven:create-food-959439:7352721")
 }
 
 apply from: 'mcreator.gradle'

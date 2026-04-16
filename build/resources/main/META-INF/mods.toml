@@ -4,8 +4,8 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="golden_ticket"
-version="1.2.1"
-displayName="\u5A01\u529B\u6F58\u5927\u6768\u7684\u91D1\u5238"
+version="1.2.2"
+displayName="golden_ticket(权威潘大杨的金券)"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
@@ -27,4 +27,46 @@ displayTest="IGNORE_SERVER_VERSION"
 
 
 # Start of user code block dependencies configuration
+
+# 前置
+# 机械动力
+[[dependencies.golden_ticket]]
+modId="create"
+mandatory = true
+versionRange = "[1.20.1-6.0.8,)"
+ordering = "AFTER"
+side = "BOTH"
+
+# 机械动力：甜食
+[[dependencies.golden_ticket]]
+modId="create_confectionery"
+mandatory = true
+versionRange= "[1.1.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+# 联动
+# 机械动力：茶
+[[dependencies.golden_ticket]]
+modId="createteas"
+mandatory = false
+versionRange = "[1.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+# 4. 机械动力：装食
+[[dependencies.golden_ticket]]
+modId="garnished"
+mandatory = false
+versionRange = "[2.1.7.b,)"
+ordering = "AFTER"
+side = "BOTH"
+
+# 5. 机械动力：食物
+[[dependencies.golden_ticket]]
+modId="create-food"
+mandatory = false
+versionRange = "[1.20.1-1.1.12-forge,)"
+ordering = "AFTER"
+side = "BOTH"
 # End of user code block dependencies configuration
