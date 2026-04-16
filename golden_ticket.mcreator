@@ -389,17 +389,6 @@
       "subtitle": "Computer1101:卡爆阿发额电脑"
     }
   ],
-  "tag_elements": {
-    "ITEMS:forge:pmtxfood": [],
-    "ITEMS:forge:pdyfood": [
-      "CUSTOM:PacketChocolateBar",
-      "CUSTOM:PacketChocolatebarinclude"
-    ],
-    "ITEMS:forge:computer1101food": [],
-    "ITEMS:minecraft:music_discs": [
-      "~CUSTOM:Dick"
-    ]
-  },
   "tab_element_order": {
     "FOOD": [
       "PacketChocolatebarinclude",
@@ -471,7 +460,7 @@
   "workspaceSettings": {
     "modid": "golden_ticket",
     "modName": "威力潘大杨的金券",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "威力网卡的金圆券，1.20.1Forge重制版by ccz3141",
     "author": "ccz3141",
     "websiteURL": "无(no)",
