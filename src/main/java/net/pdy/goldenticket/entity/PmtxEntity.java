@@ -9,6 +9,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.*;
@@ -22,14 +23,19 @@ import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.pdy.goldenticket.init.GoldenTicketModEntities;
+import net.pdy.goldenticket.init.GoldenTicketModSounds;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.Objects;
 
 public class PmtxEntity extends Animal {
+	@SuppressWarnings("unused")
 	public PmtxEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(GoldenTicketModEntities.PMTX.get(), world);
 	}
@@ -44,7 +50,7 @@ public class PmtxEntity extends Animal {
 	}
 
 	@Override
-	public Packet<ClientGamePacketListener> getAddEntityPacket() {
+	public @NotNull Packet<ClientGamePacketListener> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
@@ -54,7 +60,7 @@ public class PmtxEntity extends Animal {
 		this.getNavigation().getNodeEvaluator().setCanOpenDoors(true);
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
-			protected double getAttackReachSqr(LivingEntity entity) {
+			protected double getAttackReachSqr(@NotNull LivingEntity entity) {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
@@ -69,7 +75,7 @@ public class PmtxEntity extends Animal {
 	}
 
 	@Override
-	public MobType getMobType() {
+	public @NotNull MobType getMobType() {
 		return MobType.UNDEFINED;
 	}
 
@@ -80,22 +86,22 @@ public class PmtxEntity extends Animal {
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pmtx_walking"));
+		return GoldenTicketModSounds.PMTX_WALKING.get();
 	}
 
 	@Override
-	public void playStepSound(BlockPos pos, BlockState blockIn) {
-		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pmtx_walking")), 0.15f, 1);
+	public void playStepSound(@NotNull BlockPos pos, @NotNull BlockState blockIn) {
+		this.playSound(Objects.requireNonNull(GoldenTicketModSounds.PMTX_WALKING.get()), 0.15f, 1);
 	}
 
 	@Override
-	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pmtx_hurt_omg"));
+	public SoundEvent getHurtSound(@NotNull DamageSource ds) {
+		return GoldenTicketModSounds.PMTX_HURT_OMG.get();
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("golden_ticket:pmtx_e_"));
+		return GoldenTicketModSounds.PMTX_E_.get();
 	}
 
 	@Override
@@ -138,19 +144,17 @@ public class PmtxEntity extends Animal {
 	}
 
 	@Override
-	public AgeableMob getBreedOffspring(ServerLevel serverWorld, AgeableMob ageable) {
+	public AgeableMob getBreedOffspring(@NotNull ServerLevel serverWorld, @NotNull AgeableMob ageable) {
 		PmtxEntity retval = GoldenTicketModEntities.PMTX.get().create(serverWorld);
-		retval.finalizeSpawn(serverWorld, serverWorld.getCurrentDifficultyAt(retval.blockPosition()), MobSpawnType.BREEDING, null, null);
-		return retval;
+        if (retval != null) {
+            retval.finalizeSpawn(serverWorld, serverWorld.getCurrentDifficultyAt(retval.blockPosition()), MobSpawnType.BREEDING, null, null);
+        }
+        return retval;
 	}
 
 	@Override
-	public boolean isFood(ItemStack stack) {
-		return Ingredient.of(ItemTags.create(new ResourceLocation("forge:pmtxfood"))).test(stack);
-	}
-
-	public static void init() {
-		SpawnPlacements.register(GoldenTicketModEntities.PMTX.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
+	public boolean isFood(@NotNull ItemStack stack) {
+		return Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "pmtxfood"))).test(stack);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -161,5 +165,9 @@ public class PmtxEntity extends Animal {
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 5);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		return builder;
+	}
+	public static boolean canSpawn(EntityType<PmtxEntity> entityType, ServerLevelAccessor levelAccessor,
+								   MobSpawnType spawnType, BlockPos pos, RandomSource random) {
+		return Animal.checkAnimalSpawnRules(entityType, levelAccessor, spawnType, pos, random);
 	}
 }

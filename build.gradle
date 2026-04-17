@@ -3,7 +3,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '6.0.47'
 }
 
-version = '1.2.2'
+version = '1.3.0'
 group = 'net.pdy.goldenticket'
 archivesBaseName = 'golden_ticket'
 
@@ -22,6 +22,8 @@ minecraft {
             if (mcreatorJvmOptions) {
                 jvmArgs += mcreatorJvmOptions.split("\\s+").findAll { it.trim() }.toList()
             }
+            property("mixin.env.remapRefMap", "true")
+            property("mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg")
         }
 
         server {
@@ -51,6 +53,7 @@ repositories {
     flatDir {
         dirs 'libs'
     }
+    mavenCentral()
 }
 
 dependencies {
@@ -65,16 +68,24 @@ dependencies {
     compileOnly(fg.deobf("dev.engine-room.flywheel:flywheel-forge-api-${minecraft_version}:${flywheel_version}"))
     runtimeOnly(fg.deobf("dev.engine-room.flywheel:flywheel-forge-${minecraft_version}:${flywheel_version}"))
     implementation(fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}"))
+    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1"))
+    implementation("io.github.llamalad7:mixinextras-forge:0.4.1")
 
+    // Farmer's Delight
+    implementation(fg.deobf("curse.maven:farmers-delight-398521:7801523"))
     // Create Confectionery
-    implementation fg.deobf("curse.maven:create-confectionery-531834:4835793")
+    implementation(fg.deobf("curse.maven:create-confectionery-531834:4835793"))
     // Create Tea
     // compileOnly fg.deobf("curse.maven:create-delicious-teas-1328556:6893693")
-    compileOnly fg.deobf(files("libs/createteas-1.0.jar"))
+    implementation(fg.deobf("libs:createteas:1.0"))
     // Garnished
-    compileOnly fg.deobf("curse.maven:garnished-923277:7557977")
+    implementation(fg.deobf("curse.maven:garnished-923277:7557977"))
     // Create Food
-    compileOnly fg.deobf("curse.maven:create-food-959439:7352721")
+    implementation(fg.deobf("curse.maven:create-food-959439:7352721"))
+    // JEI
+    implementation(fg.deobf("curse.maven:jei-238222:7391695"))
+    // apple skin
+    implementation(fg.deobf("curse.maven:appleskin-248787:4770828"))
 }
 
 apply from: 'mcreator.gradle'
