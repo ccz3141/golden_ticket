@@ -2,6 +2,7 @@
 package net.pdy.goldenticket.item;
 
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.food.FoodProperties;
@@ -18,11 +19,10 @@ import java.util.List;
 
 public class EverlastingGobstopperItem extends Item {
 	public EverlastingGobstopperItem() {
-		super(new Item.Properties().durability(128).fireResistant().rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(1).saturationMod(0.01f).alwaysEat().build()));
+		super(new Item.Properties().fireResistant().rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(1).saturationMod(0.5f).alwaysEat().build()));
 	}
 
 	@Override
-	
 	public boolean hasCraftingRemainingItem() {
 		return true;
 	}
@@ -44,7 +44,7 @@ public class EverlastingGobstopperItem extends Item {
 
 	@Override
 	public int getUseDuration(@NotNull ItemStack itemstack) {
-		return 0;
+		return 32;
 	}
 
 	@Override
@@ -60,16 +60,11 @@ public class EverlastingGobstopperItem extends Item {
 
 	@Override
 	public @NotNull ItemStack finishUsingItem(@NotNull ItemStack itemstack, @NotNull Level world, @NotNull LivingEntity entity) {
-		ItemStack retval = new ItemStack(GoldenTicketModItems.EVERLASTING_GOBSTOPPER.get());
-		super.finishUsingItem(itemstack, world, entity);
-		if (itemstack.isEmpty()) {
-			return retval;
-		} else {
-			if (entity instanceof Player player && !player.getAbilities().instabuild) {
-				if (!player.getInventory().add(retval))
-					player.drop(retval, false);
-			}
-			return itemstack;
+		if (!world.isClientSide && entity instanceof Player player) {
+			player.getFoodData().eat(1, 0.5f);
+			player.playSound(SoundEvents.GENERIC_EAT, 1.0F, 1.0F);
+			player.getCooldowns().addCooldown(this, 200);
 		}
+		return new ItemStack(GoldenTicketModItems.EVERLASTING_GOBSTOPPER.get());
 	}
 }

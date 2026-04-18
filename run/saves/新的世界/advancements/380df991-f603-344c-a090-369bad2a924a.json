@@ -7,6 +7,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:sparse_jungle": "2026-04-19 00:28:36 +0800",
       "minecraft:river": "2026-04-18 02:58:33 +0800",
       "minecraft:forest": "2026-04-12 21:35:22 +0800",
       "minecraft:plains": "2026-04-18 02:58:34 +0800"
@@ -40,6 +41,12 @@
   "create:recipes/misc/crafting/materials/experience_block": {
     "criteria": {
       "has_item": "2026-04-18 02:59:53 +0800"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/breed_an_animal": {
+    "criteria": {
+      "bred": "2026-04-19 00:41:01 +0800"
     },
     "done": true
   },

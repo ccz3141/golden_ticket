@@ -44,7 +44,7 @@ public class GoldenTicketMod {
 		GoldenTicketModItems.REGISTRY.register(bus);
 		GoldenTicketModEntities.REGISTRY.register(bus);
 
-		GoldenTicketModTabs.REGISTRY.register(bus);
+		GoldenTicketModTabs.CREATIVE_MODE_TABS.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

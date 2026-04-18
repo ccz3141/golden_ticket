@@ -13,11 +13,13 @@
   "item.golden_ticket.dick.desc": "chocolate factory",
   "entity.golden_ticket.pdy": "Pdy",
   "subtitles.pdy_chocolate1": "Pan_Da_Yang:…(Chinese)…",
-  "subtitles.pmtx_e_": "pmyx:e—",
+  "subtitles.pmtx_e_": "pmtx:e—",
   "item.golden_ticket.everlasting_gobstopper": "Everlasting Gobstopper",
   "item.golden_ticket.pmtx_spawn_egg": "Pmtx Spawn Egg",
   "entity.golden_ticket.pmtx": "Pmtx",
   "subtitles.pdy_chocolate_renyangyitouniu": "Pan_Da_Yang:认养一头牛",
   "subtitles.pmtx_hurt_omg": "pmtx:?omg?",
-  "subtitles.computer_afa": "Computer1101:卡爆阿发额电脑"
+  "subtitles.computer_afa": "Computer1101:卡爆阿发额电脑",
+  "item_group.golden_ticket.golden_ticket_tab": "golden ticket tab",
+  "item.golden_ticket.edible_binder": "edible binder"
 }

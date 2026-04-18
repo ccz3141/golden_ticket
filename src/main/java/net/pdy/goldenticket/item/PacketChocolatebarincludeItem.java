@@ -22,13 +22,11 @@ public class PacketChocolatebarincludeItem extends Item {
 	}
 
 	@Override
-	
 	public int getEnchantmentValue() {
 		return 1;
 	}
 
 	@Override
-	
 	public @NotNull Multimap<Attribute, AttributeModifier> getDefaultAttributeModifiers(@NotNull EquipmentSlot equipmentSlot) {
 		if (equipmentSlot == EquipmentSlot.MAINHAND) {
 			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
