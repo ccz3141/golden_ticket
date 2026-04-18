@@ -1,6 +1,5 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
+  "type": "create:mixing",
   "ingredients": [
     {
       "item": "minecraft:sugar"
@@ -15,9 +14,6 @@
       "item": "minecraft:sugar"
     },
     {
-      "item": "minecraft:slime_ball"
-    },
-    {
       "item": "minecraft:sugar"
     },
     {
@@ -28,10 +24,22 @@
     },
     {
       "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:blue_ice"
+    },
+    {
+      "item": "minecraft:blue_ice"
+    },
+    {
+      "amount": 250,
+      "fluidTag": "forge:honey"
     }
   ],
-  "result": {
-    "item": "golden_ticket:dick",
-    "count": 1
-  }
+  "results": [
+    {
+      "count": 1,
+      "item": "golden_ticket:unmelting_sugar_core"
+    }
+  ]
 }

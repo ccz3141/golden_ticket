@@ -21,5 +21,7 @@
   "subtitles.pmtx_hurt_omg": "pmtx:?omg?",
   "subtitles.computer_afa": "Computer1101:卡爆阿发额电脑",
   "item_group.golden_ticket.golden_ticket_tab": "golden ticket tab",
-  "item.golden_ticket.edible_binder": "edible binder"
+  "item.golden_ticket.edible_binder": "edible binder",
+  "item.golden_ticket.unmelting_sugar_core": "unmelting sugar core",
+  "item.golden_ticket.sugar_slice": "sugar slice"
 }

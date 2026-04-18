@@ -14,12 +14,14 @@
   "entity.golden_ticket.pdy": "潘大杨",
   "subtitles.pdy_chocolate1": "潘大杨：巧克力工厂",
   "subtitles.pmtx_e_": "氵番某同学：额啊",
-  "item.golden_ticket.everlasting_gobstopper": "永不消失的糖球",
+  "item.golden_ticket.everlasting_gobstopper": "吃不完的糖球",
   "item.golden_ticket.pmtx_spawn_egg": "氵番某同学刷怪蛋",
   "entity.golden_ticket.pmtx": "氵番某同学",
   "subtitles.pdy_chocolate_renyangyitouniu": "潘大杨：认养一头牛",
   "subtitles.pmtx_hurt_omg": "氵番某同学：OMG",
   "subtitles.computer_afa": "计算机1101：卡爆阿发额电脑",
   "item_group.golden_ticket.golden_ticket_tab": "金券",
-  "item.golden_ticket.edible_binder": "食品黏合剂"
+  "item.golden_ticket.edible_binder": "食品黏合剂",
+  "item.golden_ticket.unmelting_sugar_core": "永不融化的糖核",
+  "item.golden_ticket.sugar_slice": "糖片"
 }

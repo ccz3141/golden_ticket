@@ -23,6 +23,8 @@ public class GoldenTicketModItems {
 	public static final RegistryObject<Item> COMPUTER_1101_SPAWN_EGG = REGISTRY.register("computer_1101_spawn_egg", () -> new ForgeSpawnEggItem(GoldenTicketModEntities.COMPUTER_1101, -10066330, -10066330, new Item.Properties()));
 	public static final RegistryObject<Item> DICK = REGISTRY.register("dick", DickItem::new);
 	public static final RegistryObject<Item> EDIBLEBINDER = REGISTRY.register("edible_binder", EdibleBinderItem::new);
+	public static final RegistryObject<Item> UNMELTINGSUGARCORE = REGISTRY.register("unmelting_sugar_core", UnmeltingSugarCoreItem::new);
+	public static final RegistryObject<Item> SUGARSLICE = REGISTRY.register("sugar_slice", SugarSliceItem::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }
