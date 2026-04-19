@@ -3,7 +3,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '6.0.47'
 }
 
-version = '1.4.0'
+version = mod_version
 group = 'net.pdy.goldenticket'
 archivesBaseName = 'golden_ticket'
 

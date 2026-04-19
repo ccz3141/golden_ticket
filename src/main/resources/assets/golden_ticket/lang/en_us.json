@@ -23,5 +23,8 @@
   "item_group.golden_ticket.golden_ticket_tab": "golden ticket tab",
   "item.golden_ticket.edible_binder": "edible binder",
   "item.golden_ticket.unmelting_sugar_core": "unmelting sugar core",
-  "item.golden_ticket.sugar_slice": "sugar slice"
+  "item.golden_ticket.sugar_slice": "sugar slice",
+  "item.golden_ticket.sugar_core": "sugar core",
+  "item.golden_ticket.incomplete_unmelting_sugar_core": "incomplete unmelting sugar core",
+  "item.golden_ticket.incomplete_everlasting_gobstopper": "incomplete Everlasting Gobstopper"
 }

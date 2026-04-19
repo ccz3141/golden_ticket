@@ -12,7 +12,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class UnmeltingSugarCoreItem extends Item {
 	public UnmeltingSugarCoreItem() {
-		super(new Item.Properties().rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationMod(0.5f).alwaysEat().build()));
+		super(new Item.Properties().rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(1).saturationMod(0.5f).alwaysEat().build()));
 	}
 
 	@Override

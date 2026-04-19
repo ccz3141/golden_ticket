@@ -4,6 +4,7 @@
  */
 package net.pdy.goldenticket.init;
 
+import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
@@ -25,6 +26,12 @@ public class GoldenTicketModItems {
 	public static final RegistryObject<Item> EDIBLEBINDER = REGISTRY.register("edible_binder", EdibleBinderItem::new);
 	public static final RegistryObject<Item> UNMELTINGSUGARCORE = REGISTRY.register("unmelting_sugar_core", UnmeltingSugarCoreItem::new);
 	public static final RegistryObject<Item> SUGARSLICE = REGISTRY.register("sugar_slice", SugarSliceItem::new);
+	public static final RegistryObject<Item> SUGARCORE = REGISTRY.register("sugar_core", SugarCoreItem::new);
+
+	@SuppressWarnings("unused")
+	public static final RegistryObject<SequencedAssemblyItem> INCOMPLETEUNMELTINGSUGARCORE = REGISTRY.register("incomplete_unmelting_sugar_core", IncompleteUnmeltingSugarCoreItem::new);
+	@SuppressWarnings("unused")
+	public static final RegistryObject<SequencedAssemblyItem> INCOMPLETEEVERLASTINGGOBSTOPPER = REGISTRY.register("incomplete_everlasting_gobstopper", IncompleteEverlastingGobstopperItem::new);
 	// Start of user code block custom items
 	// End of user code block custom items
 }
