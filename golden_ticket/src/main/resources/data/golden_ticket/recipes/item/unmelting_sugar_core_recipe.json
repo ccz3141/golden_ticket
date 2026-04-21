@@ -1,0 +1,278 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "golden_ticket:sugar_core"
+  },
+  "loops": 10,
+  "results": [
+    {
+      "chance": 100.0,
+      "item": "golden_ticket:unmelting_sugar_core"
+    },
+    {
+      "chance": 50.0,
+      "item": "minecraft:sugar"
+    },
+    {
+      "chance": 10.0,
+      "item": "minecraft:blue_ice"
+    },
+    {
+      "chance": 10.0,
+      "item": "minecraft:packed_ice"
+    },
+    {
+      "chance": 10.0,
+      "item": "minecraft:ice"
+    },
+    {
+      "chance": 10.0,
+      "item": "golden_ticket:sugar_slice"
+    },
+    {
+      "chance": 10.0,
+      "item": "golden_ticket:sugar_core"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        },
+        {
+          "amount": 250,
+          "fluidTag": "forge:honey"
+        }
+      ],
+      "results": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        },
+        {
+          "item": "minecraft:sugar"
+        }
+      ],
+      "results": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        }
+      ],
+      "results": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        },
+        {
+          "item": "golden_ticket:edible_binder"
+        }
+      ],
+      "results": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        },
+        {
+          "item": "golden_ticket:sugar_slice"
+        }
+      ],
+      "results": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        },
+        {
+          "item": "minecraft:sugar"
+        }
+      ],
+      "results": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        }
+      ],
+      "results": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        },
+        {
+          "amount": 100,
+          "fluidTag": "forge:honey"
+        }
+      ],
+      "results": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        },
+        {
+          "item": "golden_ticket:sugar_slice"
+        }
+      ],
+      "results": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        },
+        {
+          "item": "golden_ticket:edible_binder"
+        }
+      ],
+      "results": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        },
+        {
+          "item": "golden_ticket:sugar_slice"
+        }
+      ],
+      "results": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        },
+        {
+          "item": "minecraft:blue_ice"
+        }
+      ],
+      "results": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        },
+        {
+          "item": "golden_ticket:sugar_core"
+        }
+      ],
+      "results": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        },
+        {
+          "item": "minecraft:sugar"
+        }
+      ],
+      "results": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        },
+        {
+          "item": "minecraft:blue_ice"
+        }
+      ],
+      "results": [
+        {
+          "item": "golden_ticket:incomplete_unmelting_sugar_core"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "golden_ticket:incomplete_unmelting_sugar_core"
+  }
+}

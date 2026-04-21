@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "create_confectionery:full_chocolate_bar"
+    },
+    {
+      "item": "golden_ticket:goldenticket"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "result": {
+    "item": "golden_ticket:packet_chocolatebarinclude",
+    "count": 1
+  }
+}

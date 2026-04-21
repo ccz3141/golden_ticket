@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "golden_ticket:pdy_spawn_egg"
+    },
+    {
+      "item": "golden_ticket:packet_chocolatebarinclude"
+    },
+    {
+      "item": "golden_ticket:pmtx_spawn_egg"
+    },
+    {
+      "item": "golden_ticket:computer_1101_spawn_egg"
+    },
+    {
+      "item": "golden_ticket:goldenticket"
+    },
+    {
+      "item": "golden_ticket:computer_1101_spawn_egg"
+    },
+    {
+      "item": "golden_ticket:pmtx_spawn_egg"
+    },
+    {
+      "item": "golden_ticket:packet_chocolatebarinclude"
+    },
+    {
+      "item": "golden_ticket:pdy_spawn_egg"
+    }
+  ],
+  "result": {
+    "item": "golden_ticket:dick",
+    "count": 1
+  }
+}

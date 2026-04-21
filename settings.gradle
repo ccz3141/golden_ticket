@@ -1,13 +1,2 @@
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        maven {
-            name = 'MinecraftForge'
-            url = 'https://maven.minecraftforge.net/'
-        }
-    }
-}
-
-plugins {
-    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.7.0'
-}
+rootProject.name = 'golden_ticket'
+include 'golden_ticket', 'golden_ticket_moreplayers'

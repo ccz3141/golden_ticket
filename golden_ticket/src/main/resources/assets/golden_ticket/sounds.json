@@ -1,0 +1,74 @@
+{
+  "pdy_chocolate1": {
+    "subtitle": "subtitles.pdy_chocolate1",
+    "sounds": [
+      {
+        "name": "golden_ticket:chi_shi_ke_ji__quan_xin_sheng_ji_quan_zi_dong_chao_ji_qiao_ke_li_gong_han__",
+        "stream": false
+      }
+    ]
+  },
+  "pdy_chocolate_zhongsuozhouzhi": {
+    "subtitle": "subtitles.pdy_chocolate_zhongsuozhouzhi",
+    "sounds": [
+      {
+        "name": "golden_ticket:chi_shi_ke_ji__quan_xin_sheng_ji_quan_zi_dong_chao_ji_qiao_ke_li_gong_han___00_00_00-00_00_02",
+        "stream": false
+      }
+    ]
+  },
+  "pdy_chocolate_quanzidongchaojiqiaokeligongchang": {
+    "subtitle": "subtitles.pdy_chocolate_quanzidongchaojiqiaokeligongchang",
+    "sounds": [
+      {
+        "name": "golden_ticket:chi_shi_ke_ji__quan_xin_sheng_ji_quan_zi_dong_chao_ji_qiao_ke_li_gong_han___00_01_01-00_01_03",
+        "stream": false
+      }
+    ]
+  },
+  "pdy_chocolate_renyangyitouniu": {
+    "subtitle": "subtitles.pdy_chocolate_renyangyitouniu",
+    "sounds": [
+      {
+        "name": "golden_ticket:chi_shi_ke_ji__quan_xin_sheng_ji_quan_zi_dong_chao_ji_qiao_ke_li_gong_han___00_01_20-00_01_22",
+        "stream": false
+      }
+    ]
+  },
+  "pmtx_hurt_omg": {
+    "subtitle": "subtitles.pmtx_hurt_omg",
+    "sounds": [
+      {
+        "name": "golden_ticket:shou_shang_omg",
+        "stream": false
+      }
+    ]
+  },
+  "pmtx_walking": {
+    "subtitle": "subtitles.pmtx_walking",
+    "sounds": [
+      {
+        "name": "golden_ticket:pmzou_lu_ren_",
+        "stream": false
+      }
+    ]
+  },
+  "pmtx_e_": {
+    "subtitle": "subtitles.pmtx_e_",
+    "sounds": [
+      {
+        "name": "golden_ticket:zhan_bai_yin_xiao__e_jiu_chi_pao_mian_",
+        "stream": false
+      }
+    ]
+  },
+  "computer_afa": {
+    "subtitle": "subtitles.computer_afa",
+    "sounds": [
+      {
+        "name": "golden_ticket:ji_suan_ji_qia_bao_a_fa_e_dian_nao_",
+        "stream": false
+      }
+    ]
+  }
+}
