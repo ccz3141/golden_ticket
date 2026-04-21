@@ -88,5 +88,3 @@ dependencies {
     implementation(fg.deobf("curse.maven:appleskin-248787:4770828"))
 }
 
-apply from: 'mcreator.gradle'
-
