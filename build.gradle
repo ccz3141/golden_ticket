@@ -48,7 +48,9 @@ repositories {
     maven { url = "https://maven.createmod.net" }
     maven { url = "https://maven.ithundxr.dev/mirror" }
     maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" }
-    maven { url = "https://cursemaven.com"}
+    maven { url = "https://cursemaven.com" }
+    maven { url = "https://maven.blamejared.com/" }
+    maven { url = "https://modmaven.dev" }
     // create-delicious-teas一直拉取失败，暂时用本地库
     flatDir {
         dirs 'libs'
@@ -83,7 +85,7 @@ dependencies {
     // Create Food
     implementation(fg.deobf("curse.maven:create-food-959439:7352721"))
     // JEI
-    implementation(fg.deobf("curse.maven:jei-238222:7391695"))
+    implementation(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
     // apple skin
     implementation(fg.deobf("curse.maven:appleskin-248787:4770828"))
 }
